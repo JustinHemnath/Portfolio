@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+
+    <style>
+
+        body {
+
+            font-size: 2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(213, 214, 214);
+            
+        }
+
+        .container {
+
+            position: relative;
+
+        }
+
+        .main {
+
+            width: 15em;
+            height: 7em;
+            margin: 5em auto;
+            background-color: rgb(253, 255, 255);
+            border-radius: 0.5em;
+            box-shadow: 0 0 25px grey;
+            text-align: center;
+            padding: 2em;
+
+        }
+
+        button {
+
+            color: white;
+            background-color: rgb(1, 162, 255);
+            border: 2px solid rgb(1, 162, 255);
+            border-radius: 0.5em;
+            padding: 1em;
+            margin-top: 1em;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.1s;
+
+        }
+
+        button:hover {
+
+            color: rgb(1, 162, 255);
+            background-color: white;
+
+        }
+
+        .modal {
+
+            opacity: 0;
+            position: fixed;
+            top: 2em;
+            width: 80%;
+            margin: 3em;
+            height: 0;
+            background-color: rgb(34, 175, 109);
+            border-radius: 0.5em;
+            box-shadow: 0 0 25px grey;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            transition: display 0.3s;
+
+        }
+
+        span {
+
+            position: absolute;
+            top: 0; 
+            right: 20px;
+            color: black; 
+            font-size: 3rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: color 0.3s;
+
+        } 
+
+        span:hover {
+
+            color: white;   
+
+        }
+
+        @media all and (max-width: 600px) {
+
+            body {
+
+                font-size: 1rem;
+
+            }
+
+            .main {
+
+                width: 10em;
+                height: 10em;
+                margin: 2em auto;
+                padding: 2em 1em;
+
+            }
+
+            button {
+
+                padding: 1em;
+                margin-top: 0.5em;
+                font-size: 0.8rem;
+
+            }
+
+            .modal {
+
+                top: 2em;
+                width: 20%;
+                margin: 3em 6em;
+                height: 0;
+                padding: 2em;
+
+            }
+
+            span {
+
+                position: absolute;
+                top: 0; 
+                right: 10px;
+                font-size: 2rem;
+
+            } 
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h2>MODAL PROJECT</h2>
+
+            <button>
+                OPEN MODAL
+            </button>
+        </div>
+
+        <div class="modal" id="box">
+            <h2>MODAL</h2>
+            <span>&times;</span>
+        </div>
+    </div>
+
+    <script>
+        let openbtn = document.querySelector("button");
+
+        let closebtn = document.querySelector("span");
+
+        let modal = document.querySelector(".modal");
+
+        openbtn.addEventListener("click", () => {
+            modal.style.opacity = "1";
+            modal.style.height = "4em";
+            modal.style.transition = "opacity 0.5s";
+        });
+
+        closebtn.addEventListener("click", () => {
+            modal.style.opacity = "0";
+            modal.style.height = "0";
+            modal.style.transition = "opacity 0.5s";
+        });
+
+
+    </script>
+</body>
+</html>
