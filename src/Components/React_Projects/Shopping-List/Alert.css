@@ -1,0 +1,28 @@
+.Alert {
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.success {
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: rgb(150, 215, 150);
+    color: green;
+    width: 40em;
+    height: 1em;
+    padding: 0.8em 0;
+    text-align: center;
+
+}
+
+.danger {
+    border: 1px solid rgb(171, 1, 1);
+    border-radius: 5px;
+    background-color: rgb(234, 142, 142);
+    color: rgb(155, 0, 0);
+    width: 40em;
+    height: 1em;
+    padding: 0.8em 0;
+    text-align: center; 
+}

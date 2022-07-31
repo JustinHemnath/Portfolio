@@ -1,13 +1,36 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  @font-face {
+    font-family: InterExtraBold;
+    src: url(./fonts/InterExtraBold.woff2);
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: SlateBold;
+    src: url(./fonts/SlateBold.woff2);
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: Slate;
+    src: url(./fonts/SlateReg.woff2);
+  }
+
+  @font-face {
+    font-family: InterReg;
+    src: url(./fonts/InterReg.woff2);
+  }
+  
+  @font-face {
+    font-family: SlateBook;
+    src: url(./fonts/SlateBook.woff2);
+  }
+  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

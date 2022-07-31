@@ -1,0 +1,78 @@
+.navbar {
+  background: #28b097;
+  box-shadow: 0 1px 5px lightgray;
+  height: 7vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  font-family: InterReg, sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  user-select: none;
+  overflow: hidden;
+}
+
+.navbar .nav-link {
+  padding: 4vh 2vw;
+  text-decoration: none;
+  color: #32373C;
+  letter-spacing: 4px;
+  background-color: #28b097;
+  /* border-right: 1px solid black; */
+}
+
+/* .navbar .nav-link:hover {
+  background-color: #f1f5f9;
+  padding: 4vh 2vw;
+  cursor: pointer;
+  transition: background-color 0.3s linear, border 0.3s linear;
+  color: 0.1s ease;
+} */
+
+.navbar .active-link {
+  background-color: #f1f5f9;
+  color: #32373C;
+  text-decoration: none;
+  padding: 4vh 2vw;
+  cursor: pointer;
+  transition: background-color 0.3s linear, border 0.3s linear;
+  color: 0.1s ease;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+  .navbar .nav-link {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .navbar {
+    margin: auto;
+  }
+
+  .navbar .nav-link {
+    padding: 2em 2vw;
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    text-align: center;
+    border-right: 1px solid transparent;
+    flex: 33%;
+  }
+
+  .navbar .nav-link:hover {
+    padding: 2em 2vw;
+  }
+
+  .navbar .house-icon {
+    font-size: 0.9rem;
+  }
+
+}

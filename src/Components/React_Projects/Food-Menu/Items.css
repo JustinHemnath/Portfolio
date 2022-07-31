@@ -1,0 +1,42 @@
+.items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8em;
+    place-items: center;
+}
+
+.item-card {
+    width: 35em;
+    height: 240px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+img {
+    grid-area: 1/ 1/ 5/ 5;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px grey;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(13, 92, 195);
+    grid-area: 1/ 5/ 2/ 7;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    grid-area: 1/ 8/ 2/ 8;
+}
+
+.desc {
+    color: rgb(97, 151, 221);
+    font-size: 1.1rem;
+    font-weight: 400;
+    grid-area: 2/ 5/ 5/ 8;
+}

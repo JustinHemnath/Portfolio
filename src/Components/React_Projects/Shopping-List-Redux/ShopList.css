@@ -1,0 +1,148 @@
+.ShopList {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2em 0 4em; 
+}
+
+.shoplist-info {
+    width: 75em;
+    height: 1.5em;
+    background-color: rgb(254, 244, 193);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(174, 147, 14);
+    font-size: 1.2rem;
+    margin: auto;
+    border: 1px solid rgb(250, 227, 112);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.List-card {
+    width: 50em;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(115, 182, 185);
+    transition: 0.3s box-shadow;
+}
+
+.List-card:hover {
+    box-shadow: 0 0 25px rgb(115, 182, 185);
+}
+
+.shoplist-header {
+    text-align: center;
+    font-family: 'Lucida Sans','Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+}
+
+.shoplist-underline {
+    margin: auto;
+    width: 24em; 
+    height: 0.2em;
+    background-color: rgb(62, 193, 229);
+}
+
+
+.alertbox {
+    height: 4em;
+    margin-bottom: 1em;
+}
+
+.topPart {
+    width: 100%;
+}
+
+
+.topPart > * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+
+.shoplist-input {
+    background-color: rgb(193, 233, 243);
+    width: 25em;
+    height: 2em;
+    outline: none !important;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: rgb(3, 132, 167);
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    margin-left: 5em;
+}
+
+.shoplist-input::placeholder {
+    color: rgb(3, 132, 167);
+}
+
+.shoplist-submit-btn {
+    border: 1px solid rgb(3, 132, 167);
+    border-radius: 5px;
+    padding: 0.4em 1em;
+    margin-left: 2em;
+    font-size: 1.1rem;
+    background-color: white;
+    color: rgb(3, 132, 167);
+    transition: 0.3s background-color;
+}
+
+.shoplist-submit-btn:hover {
+    background-color: rgb(3, 132, 167);
+    color: white;
+    cursor: pointer;
+}
+
+.List {
+
+    padding: 2em 0 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.listitem {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.listitem p { 
+
+    font-size: 1.5rem;
+    flex: 90%;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+
+}
+
+.listitem i {
+
+    font-size: 1.2rem;
+    flex: 10%;
+    color: rgb(3, 132, 167);
+    cursor: pointer;
+    transition: 0.3s all;
+
+}
+
+.listitem i:hover {
+    color: red;
+}
+
+
+.clearlist {
+    width: 100px;
+    margin: auto;
+    margin-top: 2em;
+    color: rgb(179, 78, 78);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: white;
+}

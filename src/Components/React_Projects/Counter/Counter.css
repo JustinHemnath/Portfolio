@@ -1,0 +1,112 @@
+.counter {
+
+    width: 60em;
+    margin: 4em auto;
+    text-align: center;
+    padding: 1em 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, 
+    Verdana, sans-serif;
+
+}
+
+.counter p {
+
+    width: 7em;
+    margin: 0.8em auto;
+    color: black;
+    font-size: 8rem;
+
+}
+
+.counter h2 {
+
+    color: white;
+
+}
+
+.counter .decrease, .counter .increase {
+
+    background-color: rgb(21, 181, 106);
+    color: black;
+    padding: 0.8em 1em;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    border-radius: 40px 0 0 40px;
+    box-shadow: 0 0 30px rgb(81, 81, 81) inset;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+}    
+
+.counter .decrease:hover, .counter .increase:hover {
+
+    background-color: black;
+    color: white;
+
+}
+
+.counter .increase {
+
+    border-radius: 0 40px 40px 0;
+
+}
+
+.counter .reset {
+
+    padding: 0.8em 1em;
+    margin: 0 1em;
+    font-size: 2rem;
+    background-color: rgb(252, 5, 5);
+    color: black;  
+    border: 1px solid transparent;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.counter .reset:hover {
+
+    background-color: black;
+    color: white; 
+
+}
+
+@media all and (max-width: 600px) {
+
+    .counter {
+
+        width: 10em;
+        margin: 0.5em auto;
+        text-align: center;
+        padding: 0.1em 1em;
+
+    }
+
+    .counter .decrease,
+    .counter .increase,
+    .counter .reset {
+
+        display: block;
+        border-radius: 10px;
+        padding: 0.5em;
+        margin: 1em auto;
+        font-size: 1.5rem;
+
+
+    }
+
+    .counter p {
+
+        width: 1em;
+        margin: 0.8em auto;
+        color:white;
+        font-size: 6rem;
+    
+    }
+    
+    .counter h2 {
+    
+        color: white;
+    
+    }
+}

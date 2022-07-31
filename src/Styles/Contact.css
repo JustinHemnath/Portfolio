@@ -1,0 +1,99 @@
+.contact {
+
+    max-width: 35%;
+    margin: auto;
+    padding: 5em 0;
+
+}
+
+.contactdiv {
+
+    display: flex;
+    align-items: center;
+    font-family: 'Open sans';
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: #32373C;
+    margin-bottom: 4em;
+    
+}
+
+.contactdiv p, .contactdiv a {
+
+    transition: all 0.3s linear;
+
+}
+
+.contactdiv a {
+
+    color: #32373C;
+    text-decoration: none;
+
+}
+
+.contactdiv p:hover, .contactdiv a:hover {
+
+    color: #28b097;
+
+}
+
+.icons {
+
+    margin-right: 50px;
+    font-size: 5rem;
+    color: #28b097;
+    
+}
+
+
+@media all and (min-width: 600px) and (max-width: 768px) {
+    
+    .contact {
+
+        max-width: 60%;
+        margin: auto;
+        padding: 5em 2em;
+
+    }
+    
+    .contactdiv {
+
+        font-size: 1.4rem;
+        margin-bottom: 4em;
+
+    }
+
+    .icons {
+
+        font-size: 4rem;
+
+    }
+
+
+}
+
+@media all and (max-width: 600px) {
+
+    .contact {
+
+        max-width: 90%;
+        margin: auto;
+        padding: 5em 2em;
+
+    }
+    
+    .contactdiv {
+
+        font-size: 1.1rem;
+        margin-bottom: 4em;
+
+    }
+
+    .icons {
+
+        margin-right: 20px;
+        font-size: 2.8rem;
+
+    }
+
+}

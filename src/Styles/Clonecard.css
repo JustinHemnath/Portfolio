@@ -1,0 +1,142 @@
+.clone-card {
+  background-color: #e2e1e1;
+  min-width: 300px;
+  margin: 0 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(150, 149, 149, 0.75);
+          box-shadow: 0px 0px 10px 0px rgba(150, 149, 149, 0.75);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  gap: 1px;
+  padding: 1px;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+.clone-card:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+.clone-card .card-name {
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 1 / 1 / 4 / 4;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 800;
+  color: black;
+  padding: 50px 30px 10px 30px;
+  cursor: pointer;
+}
+
+.clone-card .main-site-btn {
+  border-radius: 0 0 0 5px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: 4 / 1 / 4 / 1;
+  background-color: #28b097;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.clone-card .main-site-btn:hover {
+  background-color: #1C2027;
+  color: white;
+}
+
+.clone-card .code-btn {
+  border-radius: 0 0 5px 0;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: 4 / 2 / 4 / 2;
+  background-color: #28b097;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.clone-card .code-btn:hover {
+  background-color: #1C2027;
+  color: white;
+}
+
+.clone-card .code-btn span {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .clone-card {
+    width: 300px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .clone-card .card-name {
+    font-size: 1.5rem;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 1 / 1 / 3 / 3;
+  }
+  .clone-card .code-btn, .clone-card .main-site-btn {
+    font-size: 1rem;
+    padding: 15px 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .clone-card {
+    width: 350px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .clone-card .card-name {
+    font-size: 1.7rem;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 1 / 1 / 3 / 3;
+  }
+  .clone-card .code-btn, .clone-card .main-site-btn {
+    font-size: 0.8rem;
+    padding: 15px 5px;
+  }
+}
+/*# sourceMappingURL=Clonecard.css.map */
