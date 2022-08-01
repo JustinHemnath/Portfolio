@@ -4,7 +4,7 @@ import axios from "axios";
 import WeatherData from './WeatherData'
 
 function Weather() {
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState("")
   const [ info, setInfo ] = useState(false)
 
   
@@ -14,8 +14,9 @@ function Weather() {
 
     try {
       const response = await axios.get(locationUrl);
+      console.log(response.data)
       const locData = response.data;
-
+      
 
       setInfo({  
         place: `${locData.name}, ${locData.sys.country}`,
