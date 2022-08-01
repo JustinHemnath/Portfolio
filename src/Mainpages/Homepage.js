@@ -80,13 +80,13 @@ const Homepage = () => {
             front-end web development and React Js in specific?
           </h1>
           
-          <p>As far as I can remember, I've always had a mouse 
+          <p>I've always had a mouse 
              and keyboard at the end of my hands. When my father 
              was done with his work by the evening, he would let
              me use the computer. I grew up watching windows evolve 
-             from 95 to XP and surprised by the colors and theme 
-             with every new windows. So a career in the IT field 
-             was always in mind.
+             from 95 to XP and was fascinated by the change in 
+             interface and look with every new windows. So a 
+             career in the IT field was always in mind.
           </p>
 
           <p>During my one year stint as a language editor 
