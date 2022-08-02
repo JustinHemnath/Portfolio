@@ -12,17 +12,19 @@ function WeatherData({ info }) {
         exit={{ opacity: 0 }} 
         className="weatherData">
       <div className="weather-div-1">
-        <b style={{ fontSize: "5rem", letterSpacing: 2 }}>{place}</b>
+        <b style={{ fontSize: "4rem", letterSpacing: 2 }}>{place}</b>
       </div>
 
       <div className="weather-div-2">
         <b style={{ fontSize: "2rem" }}>{tempMin}<br />Min</b>
-        <b style={{ fontSize: "6rem" }}>{temp}</b>
+        <b style={{ fontSize: "5.5rem" }}>{temp}</b>
         <b style={{ fontSize: "2rem" }}>{tempMax}<br />Max</b>
       </div>
 
       <div className="weather-div-3">
-        <b style={{ fontSize: "3rem", letterSpacing: 4 }}>{climate}</b>
+        <b style={{ fontSize: "3rem", letterSpacing: 2 }}>
+              {climate}
+        </b>
       </div>
     </motion.div>
   );

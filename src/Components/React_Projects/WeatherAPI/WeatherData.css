@@ -4,14 +4,15 @@
     margin: auto;
     padding: 2em;
     border-radius: 5px;
-    box-shadow: 0 0 10px grey;
-    color: white;
-    background-color: #0ea5e9;
+    border: 1px solid #0ea5e9;
+    box-shadow: 0 0 10px #0ea5e9;
+    color: #0ea5e9;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    font-family: InterReg, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .weather-div-1 {
@@ -21,11 +22,13 @@
 .weather-div-2 {
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: flex-end;
     flex: 50%;
+    margin-bottom: 8em;
     
 }
 
 .weather-div-3 {
     flex: 20%;
+    font-family: 'Segoe UI', sans-serif;
 }
