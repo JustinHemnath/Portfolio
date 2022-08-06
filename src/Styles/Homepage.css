@@ -98,7 +98,7 @@
   width: 50em;
   margin: auto;
   padding: 10px 50px;
-  font-family: "DM sans";
+  font-family: InterReg;
   border-radius: 10px;
 }
 .homepage .section-two .personal-info .personal-info-section .info-item {
@@ -267,6 +267,7 @@
     padding: 10px;
     width: 20em;
     margin: auto;
+    letter-spacing: 1px;
   }
   .homepage .section-two .personal-info .personal-info-section .info-item {
     display: flex;
@@ -286,7 +287,7 @@
     text-align: justify;
     text-justify: inter-word;
     line-height: 2;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0;
   }
   .homepage .section-two .personal-info .personal-info-section .info-item p:nth-of-type(2) a {
