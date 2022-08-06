@@ -2,12 +2,8 @@ import React from "react";
 import "../Styles/Homepage.css";
 import Skills from "./Skills";
 import { motion } from "framer-motion";
-import { useSelector } from 'react-redux';
-import { themeState } from "../Features/themeSlice";
-
 
 const Homepage = () => {
-  const theme = useSelector(themeState)
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -16,7 +12,7 @@ const Homepage = () => {
       className="homepage"
     >
       <div className="section-one">
-        <div className="section-one-left" style={{ color: theme.fontColor }}>
+        <div className="section-one-left">
         <div className="about">
           <div className="sideline"></div>
 
@@ -27,7 +23,7 @@ const Homepage = () => {
             developer from Chennai.
           </p>
 
-          <div className="extra" style={{ color: theme.fontColor }}>
+          <div className="extra">
             <p>
               <i
                 className="fa-solid fa-angles-right fa-beat"
@@ -62,7 +58,7 @@ const Homepage = () => {
       </div>
 
       <div className="section-two">
-        <div className="aboutme" style={{ backgroundColor: theme.sectionColor, color: theme.fontColor }}>
+        <div className="aboutme">
           <h1>
             <i className="fa-solid fa-circle fa-beat"></i>Why front-end web
             development and React Js in specific?
@@ -97,9 +93,9 @@ const Homepage = () => {
         </div>
 
         <div className="personal-info">
-          <h1 style={{ color: theme.fontColor }}>Resume</h1>
+          <h1>Resume</h1>
 
-          <div className="personal-info-section" style={{ backgroundColor: theme.sectionColor, color: theme.fontColor }}>
+          <div className="personal-info-section">
             <div className="info-item">
               <p>Name</p>
               <p>Hemnath Balasubramanian</p>

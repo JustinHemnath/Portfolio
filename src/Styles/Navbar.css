@@ -1,37 +1,39 @@
-.Nav {
+.navbar {
   background: #28b097;
   box-shadow: 0 1px 5px lightgray;
-  display: flex;
-  flex-direction: row;
   height: 7vh;
   position: sticky;
   top: 0;
   z-index: 10;
-  overflow: hidden;
-  font-size: 1.5rem;
-  
-}
-
-.navbar {
-  flex: 90%;
   display: flex;
   align-items: center;
   font-family: InterReg, sans-serif;
+  font-size: 1.5rem;
   color: black;
   user-select: none;
+  overflow: hidden;
 }
 
 .navbar .nav-link {
   padding: 4vh 2vw;
   text-decoration: none;
-  color: #32373c;
+  color: #32373C;
   letter-spacing: 4px;
   background-color: #28b097;
+  /* border-right: 1px solid black; */
 }
+
+/* .navbar .nav-link:hover {
+  background-color: #f1f5f9;
+  padding: 4vh 2vw;
+  cursor: pointer;
+  transition: background-color 0.3s linear, border 0.3s linear;
+  color: 0.1s ease;
+} */
 
 .navbar .active-link {
   background-color: #f1f5f9;
-  color: #32373c;
+  color: #32373C;
   text-decoration: none;
   padding: 4vh 2vw;
   cursor: pointer;
@@ -39,27 +41,19 @@
   color: 0.1s ease;
 }
 
-.Nav .togglebtn {
-  flex: 10%;
-  min-width: 2em;
-  height: 100%;
-  color: #32373c;
-  font-size: 2rem;
-  padding: 0.3em 0;
-  overflow-y: none;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 600px) and (max-width: 768px) {
+
   .navbar .nav-link {
     display: flex;
     align-items: center;
     margin-left: 0;
     font-size: 1.2rem;
   }
+
 }
 
 @media screen and (max-width: 600px) {
+
   .navbar {
     margin: auto;
   }
@@ -80,4 +74,5 @@
   .navbar .house-icon {
     font-size: 0.9rem;
   }
+
 }

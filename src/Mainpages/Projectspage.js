@@ -5,12 +5,10 @@ import Procard from "../Components/Procard";
 import Clonecard from "../Components/Clonecard";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useSelector } from 'react-redux';
-import { themeState } from "../Features/themeSlice";
 
 
 const Projectspage = () => {
-  const theme = useSelector(themeState)
+ 
                                             /* Map functions to make list */
 
   
@@ -81,7 +79,7 @@ const Projectspage = () => {
                                                   {/* REACT PROJECTS */}
 
 
-      <div className="heading" style={{ color: theme.fontColor}}>
+      <div className="heading">
 
         <p>REACT PROJECTS:</p>
 
@@ -109,7 +107,7 @@ const Projectspage = () => {
 
                                   {/* RESPONSIVE HTML/JAVASCRIPT PROJECTS */}
 
-      <div className="heading" style={{ color: theme.fontColor}}>
+      <div className="heading">
 
         <p>RESPONSIVE HTML/JAVASCRIPT PROJECTS:</p>
 
@@ -137,7 +135,7 @@ const Projectspage = () => {
                                                       {/* CLONES */}
       
 
-      <div className="heading" style={{ color: theme.fontColor}}>
+      <div className="heading">
 
         <p>CLONES:</p>
 

@@ -1,8 +1,7 @@
 export const SLStyle = {
-  height: '300vh',
-  backgroundColor: 'white',
   paddingTop: '2em',
   fontFamily: "'Lucida Sans','Lucida Sans Unicode', Geneva, Verdana, sans-serif",
+
 }
 
 export const SLHeader = {
