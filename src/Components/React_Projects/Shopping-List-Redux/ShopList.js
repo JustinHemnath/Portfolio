@@ -31,10 +31,6 @@ function ShopList() {
     }
   }
 
-  const deleteItem = () => {
-    dispatch(DELETE_ITEM())
-  }
-
   const closemodal = () => {
     dispatch(CLOSE_MODAL())
   }

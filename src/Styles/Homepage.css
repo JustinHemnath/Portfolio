@@ -14,7 +14,6 @@
   flex: 80%;
   justify-content: space-between;
   line-height: 1.6;
-  color: #32373c;
 }
 .homepage .section-one .section-one-left .about {
   font-size: 2.5rem;
@@ -39,7 +38,6 @@
 .homepage .section-one .section-one-left .extra {
   margin-top: 10px;
   text-align: justify;
-  color: #32373c;
 }
 .homepage .section-one .section-one-left .extra p {
   font-size: 1.5rem;
@@ -68,7 +66,6 @@
   line-height: 1.6;
   text-align: justify;
   text-justify: inter-word;
-  color: #32373c;
 }
 .homepage .section-two .aboutme h1 {
   font-family: SlateBold;
@@ -90,7 +87,6 @@
   -webkit-text-decoration: underline #28b097;
           text-decoration: underline #28b097;
   font-family: SlateBold;
-  color: #32373c;
   letter-spacing: 10px;
 }
 .homepage .section-two .personal-info .personal-info-section {
@@ -105,7 +101,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: black;
   margin-top: 20px;
   line-height: 1.5;
   font-size: 1.7rem;
@@ -116,7 +111,6 @@
 }
 .homepage .section-two .personal-info .personal-info-section .info-item p:nth-of-type(2),
 .homepage .section-two .personal-info .personal-info-section .info-item ul {
-  color: rgb(77, 77, 77);
   max-width: 400px;
   flex: 50%;
 }
@@ -274,6 +268,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     font-weight: 800;
+    text-align: center;
     padding: 5px 40px;
     margin: 0.1em 0;
   }
@@ -284,17 +279,16 @@
             text-decoration: underline #28b097;
   }
   .homepage .section-two .personal-info .personal-info-section .info-item p:nth-of-type(2) {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: center;
     line-height: 2;
     font-size: 1rem;
     margin: 0;
   }
   .homepage .section-two .personal-info .personal-info-section .info-item p:nth-of-type(2) a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .homepage .section-two .personal-info .personal-info-section .info-item ul {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0;
     line-height: 1.2;
   }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "../Styles/Navbar.css";
 import { useDispatch } from 'react-redux';
@@ -17,8 +17,8 @@ const Navbar = () => {
       dispatch(DARK_MODE())
     }
   }
-  return (
 
+  return (
     <div className="Nav">
       <div className="navbar">
         <NavLink to="/home" className="nav-link" activeClassName="active-link">
@@ -50,9 +50,7 @@ const Navbar = () => {
         )}
       </div>
     </div>
-
   );
-
 };
 
 export default Navbar;

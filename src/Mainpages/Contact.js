@@ -1,9 +1,12 @@
 import React from 'react';
 import "../Styles/Contact.css";
 import { motion } from 'framer-motion';
-
+import { useSelector } from 'react-redux';
+import { themeState } from "../Features/themeSlice";
 
 const Contact = () => {
+  const theme = useSelector(themeState)
+
     return (
     <motion.div
         className="contact"
@@ -14,20 +17,20 @@ const Contact = () => {
         
         <div className="contactdiv">
             <i className="fa-solid fa-envelope icons"></i>
-            <p>justin.hemnath.96@gmail.com</p>
+            <p style={{ color: theme.fontColor}}>justin.hemnath.96@gmail.com</p>
         </div>
 
         <div className="contactdiv">
             <i className="fa-brands fa-linkedin icons"></i>
             <a href="https://www.linkedin.com/in/hemnath-balasubramanian-0a23a5185/"
-            target="_blank">
+            target="_blank" style={{ color: theme.fontColor}}>
                 Hemnath Balasubramanian
             </a>
         </div>
 
         <div className="contactdiv">
             <i className="fa-brands fa-github icons"></i>
-        <a href="https://github.com/Justinhemnath/Portofolio-main" target="_blank">
+        <a href="https://github.com/Justinhemnath/Portofolio-main" target="_blank" style={{ color: theme.fontColor}}>
             Justinhemnath
         </a>
         </div>
