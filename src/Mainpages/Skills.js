@@ -3,10 +3,14 @@ import "../Styles/Skills.css";
 
 const Skills = () => {
   return (
-    <div className="skillbox">
-      <p className="react">
+    <div className="skills">
+      <div className="react">
         REACT JS
-      </p>
+      </div>
+
+      <div className="redux">
+        REDUX
+      </div>
 
       <div className="javascript">
         JAVASCRIPT
@@ -20,10 +24,9 @@ const Skills = () => {
         HTML
       </div>
 
-      <div className="jsorbit"></div>
+      {/* <div className="jsorbit"></div>
       <div className="htmlorbit"></div>
-      <div className="cssorbit"></div>
-
+      <div className="cssorbit"></div> */}
     </div>
   );
 };

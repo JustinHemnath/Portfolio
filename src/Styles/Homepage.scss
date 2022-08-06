@@ -1,94 +1,79 @@
 $accent-green: #28b097;
 $card-grey: #2c2d33;
-$background-grey: #1C2027; 
+$background-grey: #1c2027;
 $ashen: rgb(226, 225, 225);
-$font-black: #32373C;
-
+$font-black: #32373c;
 
 .homepage {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   .section-one {
-
-    max-width: 1000px;
+    width: 80vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    line-height: 1.6;
-    color: #32373C;
 
-    .about {
+    .section-one-left {
+      display: flex;
+      flex-direction: row;
+      flex: 80%;
+      justify-content: space-between;
+      line-height: 1.6;
+      color: #32373c;
+      .about {
+        font-size: 2.5rem;
+        margin: 20px 50px 0 20px;
+        font-family: InterExtraBold;
+        text-align: center;
 
-      font-size: 2.5rem;
-      min-width: 400px;
-      margin: 20px 50px 0 20px;
-      font-family: InterExtraBold;
-      text-align: left;
+        .hello {
+          font-size: 6rem;
+          margin: 0px;
+        }
 
-      .hello {
+        .sideline {
+          border-left: 10px solid $accent-green;
+          height: 700px;
+          margin-right: 40px;
+          float: left;
+        }
 
-        font-size: 6rem;
-        margin: 0px;
-
+        .hello,
+        .intro {
+          letter-spacing: 1.2px;
+        }
       }
 
-      .sideline {
+      .extra {
+        margin-top: 10px;
+        text-align: justify;
+        color: $font-black;
 
-        border-left: 10px solid $accent-green;
-        height: 700px;
-        margin-right: 40px;
-        float: left;
-        
-        
+        p {
+          font-size: 1.5rem;
+          font-family: InterReg;
+          letter-spacing: 1px;
+        }
       }
-      
-      .hello, .intro {
-
-        letter-spacing: 1.2px;
-
-      }
-
     }
-
-
-    .extra {
-
-      margin-top: 10px;
-      min-width: 700px;
-      text-align: justify;
-      color: $font-black;
-
-      p {
-
-        font-size: 1.5rem;
-        font-family: InterReg;
-        letter-spacing: 1px;
-
-      }
-
+    .section-one-right {
+      flex: 20%;
     }
-
   }
 
   .section-two {
-
     margin: 60px;
     margin-top: 150px;
 
     .fa-circle {
-
       color: $accent-green;
       margin-right: 30px;
       vertical-align: middle;
-
     }
 
     .aboutme {
-
-      background-color: #FFFEFE;
+      background-color: #fffefe;
       // box-shadow: 0px 0px 3px 0px rgba(207, 207, 207, 0.75);
       width: 60em;
       margin: auto;
@@ -100,373 +85,283 @@ $font-black: #32373C;
       text-justify: inter-word;
       color: $font-black;
 
-      
       h1 {
-
         font-family: SlateBold;
         text-decoration: underline $accent-green;
         letter-spacing: 1.5px;
-
       }
 
       p {
-
         text-indent: 200px;
         font-family: Slate;
         font-size: 1.8rem;
-
-      }
-
-    }
-
-  .personal-info {
-
-    margin-top: 300px;
-
-    h1 {
-
-      text-align: center;
-      font-size: 4rem;
-      text-decoration: underline $accent-green;
-      font-family: SlateBold;
-      color: $font-black;
-      letter-spacing: 10px;
-      
-      
-    }
-    
-
-    .personal-info-section {
-
-      background-color: #FFFEFE;
-      // box-shadow: 0px 0px 3px 0px rgba(207, 207, 207, 0.75);
-      width: 50em;
-      margin: auto;
-      padding: 10px 50px;
-      font-family: 'DM sans';
-      border-radius: 10px;
-
-      .info-item {
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: black;
-        margin-top: 20px;
-        line-height: 1.5;
-        font-size: 1.7rem;
-        font-weight: 700;
-
-
-          p:nth-of-type(1) {
-
-            flex: 50%;
-
-          }
-
-          p:nth-of-type(2), ul {
-
-            color: rgb(77, 77, 77);
-            max-width: 400px;
-            flex: 50%;
-
-          }
-
-          p:nth-of-type(2) {
-
-            text-align: justify;
-            text-justify: inter-word;
-
-          }
-
-
-          ul {
-
-            line-height: 1.2;
-          }
-
-          a {
-
-            margin: 0 10px;
-            color: rgb(77, 77, 77);
-            
-          }
-      }
-  }
-
-}
-
-
-  }
-}
-
-@media screen and 
-
-(min-width: 600px) and 
-
-(max-width: 768px) {
-
-  .homepage {
-
-    .section-one {
-
-      display: flex;
-      flex-direction: column;
-
-      .about {
-
-        width: 600px;
-        margin-bottom: 50px;
-        text-align: center;
-        line-height: 1.4;
-
-        .hello { 
-          text-align: center;
-          font-size: 4rem;
-        }
-
-
-        .sideline {
-
-          height: 700px;
-
-        }
-      }
-    }
-
-    .extra {
-
-      p {
-
-        width: 600px;
-        font-size: 1.5rem;
-
-      }
-    }
-
-    .section-two {
-
-      margin: 20px;
-      margin-top: 600px;
-
-      .aboutme {
-
-        padding: 10px 60px;
-        line-height: 1.6;
-        width: 30em;
-        margin: auto;
-  
-      p {
-
-        text-indent: 50px;
-        font-size: 1.5rem;
-
       }
     }
 
     .personal-info {
+      margin-top: 300px;
 
-      margin-top: 150px;
-      
       h1 {
+        text-align: center;
+        font-size: 4rem;
+        text-decoration: underline $accent-green;
+        font-family: SlateBold;
+        color: $font-black;
+        letter-spacing: 10px;
+      }
 
-        font-size: 2.5rem;
-
-      } 
-   
       .personal-info-section {
+        background-color: #fffefe;
+        // box-shadow: 0px 0px 3px 0px rgba(207, 207, 207, 0.75);
+        width: 50em;
+        margin: auto;
+        padding: 10px 50px;
+        font-family: "DM sans";
+        border-radius: 10px;
 
+        .info-item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          color: black;
+          margin-top: 20px;
+          line-height: 1.5;
+          font-size: 1.7rem;
+          font-weight: 700;
+
+          p:nth-of-type(1) {
+            flex: 50%;
+          }
+
+          p:nth-of-type(2),
+          ul {
+            color: rgb(77, 77, 77);
+            max-width: 400px;
+            flex: 50%;
+          }
+
+          p:nth-of-type(2) {
+            text-align: justify;
+            text-justify: inter-word;
+          }
+
+          ul {
+            line-height: 1.2;
+          }
+
+          a {
+            margin: 0 10px;
+            color: rgb(77, 77, 77);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .homepage {
+    .section-one {
+      flex-direction: column;
+      .section-one-left {
+        flex: 100%;
+        .about {
+          text-align: center;
+          line-height: 1.4;
+
+          .hello {
+            text-align: center;
+            font-size: 4rem;
+          }
+
+          .sideline {
+            height: 700px;
+          }
+        }
+
+        .extra {
+          p {
+            width: 600px;
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .section-one-right {
+        flex: 100%;
+      }
+    }
+
+    .section-two {
+      margin-top: 100px;
+
+      .aboutme {
+        padding: 10px 60px;
+        line-height: 1.6;
         width: 30em;
         margin: auto;
 
-        .info-item {
+        p {
+          text-indent: 50px;
+          font-size: 1.5rem;
+        }
+      }
 
-          align-items: center;
+      .personal-info {
+        margin-top: 150px;
 
-          p:nth-of-type(2), ul {
+        h1 {
+          font-size: 2.5rem;
+        }
 
-            max-width: 300px; 
+        .personal-info-section {
+          width: 30em;
+          margin: auto;
 
-          }
-      
-          p:nth-of-type(1) {
+          .info-item {
+            align-items: center;
 
-            font-size: 1.5rem;
+            p:nth-of-type(2),
+            ul {
+              max-width: 300px;
+            }
 
-          }
-
-          p:nth-of-type(2), ul {
-
-            font-size: 1.5rem;
-
-            a {
-
+            p:nth-of-type(1) {
               font-size: 1.5rem;
-              color: grey;
+            }
 
+            p:nth-of-type(2),
+            ul {
+              font-size: 1.5rem;
+
+              a {
+                font-size: 1.5rem;
+                color: grey;
+              }
             }
           }
         }
       }
     }
   }
-  }
 }
 
 @media screen and (max-width: 600px) {
-
   .homepage {
-
     .section-one {
-
       display: flex;
       flex-direction: column;
       line-height: 1.6;
 
-      .about {
-        
-        text-align: center;
-        margin: 20px 5px 0 20px;
+      .section-one-left {
+        flex: 100%;
+        .about {
+          text-align: center;
+          margin: 20px 5px 0 20px;
 
-        
-        .hello {
-
-          font-size: 4rem;
-          letter-spacing: 6px;
-
-        }
-
-        .intro { 
-
-          width: 350px;
-          letter-spacing: 1px;
-
-        }
-
-        .sideline {
-
-          height: 0px;
-
-        }
-
-        p {
-
-          font-size: 1.5rem;
-
-        }
-
-        .intro {
-
-          margin: 50px 0;
-
-        }
-
-        .extra {
-
-          margin-bottom: 100px;
-
-          p {
-
-            max-width: 350px;
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-
+          .hello {
+            font-size: 4rem;
+            text-align: center;
+            letter-spacing: 6px;
           }
 
+          .intro {
+            width: 350px;
+            letter-spacing: 1px;
+          }
+
+          .sideline {
+            height: 0px;
+          }
+
+          p {
+            font-size: 1.5rem;
+          }
+
+          .intro {
+            margin: 50px 0;
+          }
+
+          .extra {
+            p {
+              max-width: 350px;
+              font-size: 1.1rem;
+              letter-spacing: 1px;
+            }
+          }
         }
+      }
+      .section-one-left {
+        flex: 100%;
       }
     }
 
     .section-two {
-
       margin: 20px;
-      margin-top: 600px;
+      margin-top: 100px;
 
       .aboutme {
-
         padding: 10px 30px;
         line-height: 1.6;
         width: 18em;
         margin: auto;
 
-          h1 { 
-
-            font-size: 1.3rem;
-            letter-spacing: 1px;
-
-          }
-  
-          p {
-
-            text-indent: 10px;
-            font-size: 1.2rem;
-
-          }
-
+        h1 {
+          font-size: 1.3rem;
+          letter-spacing: 1px;
         }
 
-        .personal-info {
+        p {
+          text-indent: 10px;
+          font-size: 1.2rem;
+        }
+      }
 
-          margin-top: 150px;
+      .personal-info {
+        margin-top: 150px;
 
-          h1 {
+        h1 {
+          font-size: 3rem;
+        }
 
-            font-size: 3rem;
+        .personal-info-section {
+          padding: 10px;
+          width: 20em;
+          margin: auto;
 
-          }
+          .info-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-weight: 800;
+            padding: 5px 40px;
+            margin: 0.1em 0;
 
-          .personal-info-section {
-
-            padding: 10px;
-            width: 20em;
-            margin: auto;
-
-
-            .info-item {
-
-              display: flex;
-              flex-direction: column;
-              justify-content: space-evenly;
+            > p:nth-of-type(1) {
+              font-size: 1.5rem;
               font-weight: 800;
-              padding: 5px 40px;
-              margin: 0.1em 0;
+              text-decoration: underline $accent-green;
+            }
 
-                > p:nth-of-type(1) {
+            p:nth-of-type(2) {
+              text-align: justify;
+              text-justify: inter-word;
+              line-height: 2;
+              font-size: 1.1rem;
+              margin: 0;
 
-                  font-size: 1.5rem;
-                  font-weight: 800;
-                  text-decoration: underline $accent-green;
-                }
-
-                p:nth-of-type(2) {
-
-                  text-align: justify;
-                  text-justify: inter-word;
-                  line-height: 2;
-                  font-size: 1.1rem;
-                  margin: 0;
-
-                  a {
-
-                    font-size: 1.2rem;
-
-                  }
-
-                }
-                   
-                ul {
-
-                  font-size: 1.2rem;
-                  margin: 0;
-                  line-height: 1.2;
-
-                }
-
+              a {
+                font-size: 1.2rem;
               }
-            
-          }
+            }
 
+            ul {
+              font-size: 1.2rem;
+              margin: 0;
+              line-height: 1.2;
+            }
+          }
         }
+      }
     }
   }
 }
