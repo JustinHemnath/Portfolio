@@ -3,7 +3,7 @@
   box-shadow: 0 1px 5px lightgray;
   display: flex;
   flex-direction: row;
-  height: 7vh;
+  max-height: 2.5em;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -39,15 +39,18 @@
   color: 0.1s ease;
 }
 
-.Nav .togglebtn {
+.Nav .toggle {
   flex: 10%;
-  min-width: 2em;
-  height: 100%;
-  color: #32373c;
-  font-size: 2rem;
-  padding: 0.3em 0;
-  overflow-y: none;
+  display: flex;
+  align-items: center;
+  width: 2em;
+  margin-right: 0.5em;
+}
+
+.Nav .toggle .togglebtn {
   cursor: pointer;
+  color: #32373c;
+  font-size: 2em;
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
