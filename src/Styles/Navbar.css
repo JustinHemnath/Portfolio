@@ -9,7 +9,6 @@
   z-index: 10;
   overflow: hidden;
   font-size: 1.5rem;
-  
 }
 
 .navbar {
@@ -47,7 +46,13 @@
   margin-right: 0.5em;
 }
 
-.Nav .toggle .togglebtn {
+.toggle .toggleSun {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+  color: #32373c;
+}
+
+.toggle .togglebtn {
   cursor: pointer;
   color: #32373c;
   font-size: 2em;
@@ -70,17 +75,18 @@
   .navbar .nav-link {
     padding: 2em 2vw;
     font-size: 0.9rem;
-    letter-spacing: 4px;
+    font-weight: bold;
     text-align: center;
     border-right: 1px solid transparent;
-    flex: 33%;
+    flex: 25%;
   }
 
-  .navbar .nav-link:hover {
-    padding: 2em 2vw;
+  .toggle .toggleSun {
+    display: none;
   }
 
-  .Nav .togglebtn {
-    font-size: 2rem;
+  .toggle .togglebtn {
+    font-size: 1.5em;
+    padding: 0 0.3em;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../Styles/Navbar.css";
 import { BsSunFill, BsToggleOff, BsToggleOn } from "react-icons/bs";
 import { useDispatch } from 'react-redux';
@@ -44,7 +44,7 @@ const Navbar = () => {
       </div>
 
       <div className="toggle">
-      <BsSunFill style={{ fontSize: '1.5em', marginRight: '0.5em', color: '#32373c' }} />
+      <BsSunFill className="toggleSun" />
         {light ? (
           <BsToggleOff className="togglebtn" onClick={toggleTheme} />
         ) : (
