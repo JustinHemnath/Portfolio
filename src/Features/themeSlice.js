@@ -12,9 +12,9 @@ const themeSlice = createSlice({
   reducers: {
     DARK_MODE: (state) => {
       return {
-        backgroundColor: "#060A0D",
-        fontColor: "#F3F4F6",
-        sectionColor: '#141B1E',
+        backgroundColor: '#232931',
+        fontColor: "#DDDDDD",
+        sectionColor: '#393E46',
       };
     },
     LIGHT_MODE: (state) => {

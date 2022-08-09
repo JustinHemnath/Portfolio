@@ -1,5 +1,5 @@
 .Nav {
-  background: #28b097;
+  background: #4ECCA3;
   box-shadow: 0 1px 5px lightgray;
   display: flex;
   flex-direction: row;
@@ -25,12 +25,10 @@
   text-decoration: none;
   color: #32373c;
   letter-spacing: 4px;
-  background-color: #28b097;
 }
 
 .navbar .active-link {
   background-color: #f1f5f9;
-  color: #32373c;
   text-decoration: none;
   padding: 4vh 2vw;
   cursor: pointer;

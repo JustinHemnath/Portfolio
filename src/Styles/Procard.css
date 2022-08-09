@@ -1,10 +1,8 @@
 .pro-card {
   background-color: #FFFEFE;
-  /* box-shadow: 0px 0px 3px 0px rgba(207, 207, 207, 0.75); */
   min-width: 300px;
   margin: 0 20px;
   border-radius: 5px;
-  display: -ms-grid;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -12,8 +10,7 @@
 }
 
 .pro-card:hover {
-  -webkit-transform: scale(1.05, 1.05);
-          transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
 }
 
 .pro-card .card-name {
@@ -23,34 +20,29 @@
   font-size: 2rem;
   font-family: 'Open sans', sans-serif;
   font-weight: 800;
-  color: #32373C; 
   padding: 50px;
   cursor: pointer;
+  background-color: #333436;
+}
+
+.text-deco {
+  text-decoration: none;
+  color: inherit;
 }
 
 .pro-card .code-btn {
   border-radius: 0 0 5px 5px;
   grid-area: 5 / 1 / 5 / 3;
-  background-color: #28b097;
+  background-color: #4ECCA3;
   color: #32373C;
   text-align: center;
   padding: 15px 0;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
-  -webkit-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.pro-card .code-btn:hover {
-  background-color: #32373C;
-  color: white;
-  padding: 15px 0;
+  user-select: none;
 }
 
 .pro-card .code-btn span {
@@ -60,18 +52,12 @@
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .pro-card {
     width: 300px;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
   .pro-card .card-name {
     font-size: 1.5rem;
     padding: 30px 30px;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-area: 1 / 1 / 4 / 4;
   }
   .pro-card .code-btn {
@@ -86,22 +72,15 @@
 @media screen and (max-width: 600px) {
   .pro-card {
     width: 350px;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
   .pro-card .card-name {
     font-size: 1.5rem;
     padding: 20px;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: 1 / 1 / 3 / 3;
   }
   .pro-card .code-btn {
     font-size: 1.2rem;
   }
 }
-/*# sourceMappingURL=Procard.css.map */

@@ -21,9 +21,9 @@ const Projectspage = () => {
 
     <Procard key={obj.name} gitlink={obj.git}>
     
-      <Link to={obj.location} className="card-name">
+      <Link to={obj.location} className="text-deco">
 
-        {obj.name}
+        {obj.name} 
 
       </Link>
 
@@ -40,7 +40,7 @@ const Projectspage = () => {
     
     <Procard key={obj.name} gitlink={obj.git}>
     
-      <a href={obj.location} target="_blank" className="card-name">
+      <a href={obj.location} target="_blank" className="text-deco">
 
         {obj.name}
 
