@@ -43,11 +43,11 @@ const Navbar = () => {
         </NavLink>
       </div>
 
-      <div className="toggle">
+      <div className="toggle" onClick={toggleTheme} >
         {light ? (
-          <BsSun className="togglebtn" onClick={toggleTheme} />
+          <BsSun className="togglebtn" />
         ) : (
-          <BsFillMoonFill className="togglebtn" onClick={toggleTheme} />
+          <BsFillMoonFill className="togglebtn"/>
         )}
       </div>
     </div>
