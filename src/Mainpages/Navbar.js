@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../Styles/Navbar.css";
-import { BsSunFill, BsToggleOff, BsToggleOn } from "react-icons/bs";
+import { BsSun, BsFillMoonFill } from "react-icons/bs";
 import { useDispatch } from 'react-redux';
 import { DARK_MODE, LIGHT_MODE } from "../Features/themeSlice";
 
@@ -44,11 +44,10 @@ const Navbar = () => {
       </div>
 
       <div className="toggle">
-      <BsSunFill className="toggleSun" />
         {light ? (
-          <BsToggleOff className="togglebtn" onClick={toggleTheme} />
+          <BsSun className="togglebtn" onClick={toggleTheme} />
         ) : (
-          <BsToggleOn className="togglebtn" onClick={toggleTheme} />
+          <BsFillMoonFill className="togglebtn" onClick={toggleTheme} />
         )}
       </div>
     </div>
