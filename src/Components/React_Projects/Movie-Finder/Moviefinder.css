@@ -1,0 +1,48 @@
+.moviefinder * {
+    box-sizing: border-box;
+}
+
+.moviefinder {
+    font-family: InterRegBold, sans-serif;
+    min-height: 150em;
+    padding-bottom: 5em;
+    background-color: #222831;
+    color: #DA0037;
+}
+
+.moviefinder .header {
+    height: 8em;
+    width: 100%;
+    padding: 1em 0;
+    background-color: #DA0037;
+}
+
+.moviefinder .header h1 {
+    margin: 0;
+    color: black;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.moviefinder .searcher {
+    width: 45em;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.moviefinder .alertbox {
+    margin-top: 2em;
+}
+
+
+/* @media screen and (max-width: 450px) {
+    .moviefinder .searcher {
+        width: 1em;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+} */

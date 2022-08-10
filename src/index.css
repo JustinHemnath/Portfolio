@@ -3,6 +3,7 @@ body {
     padding: 0;
   }
 
+
   @font-face {
     font-family: InterExtraBold;
     src: url(./fonts/InterExtraBold.woff2);

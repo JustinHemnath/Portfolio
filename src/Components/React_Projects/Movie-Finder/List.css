@@ -1,0 +1,33 @@
+.movieList {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 5em;
+    justify-content: center;
+    gap: 15em 5em;
+
+}
+
+.movieCard {
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 20em;
+    max-width: 15em;
+    flex-basis: auto;
+}
+
+.movieCard .movieImg {
+    flex: 70%;
+}
+
+.movieCard .movieImg > img {
+    object-fit: contain;
+}
+
+.movieCard > div {
+    flex: 30%;
+    text-align: center;
+}

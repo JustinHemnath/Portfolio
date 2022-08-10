@@ -13,6 +13,8 @@ import Menu from "../Components/React_Projects/Food-Menu/Menu.js";
 import ShopList from "../Components/React_Projects/Shopping-List-Redux/ShopList.js";
 import ShopListUR from "../Components/React_Projects/Shopping-List-useReducer/ShopListUR.js";
 import Weather from "../Components/React_Projects/WeatherAPI/Weather.js";
+import Moviefinder from "../Components/React_Projects/Movie-Finder/Moviefinder.js";
+
 
 const Animated = () => {
   return (
@@ -33,6 +35,7 @@ const Animated = () => {
         <Route path="/projectspage/shoplist" component={ShopList} />
         <Route path="/projectspage/shoplistUR" component={ShopListUR} />
         <Route path="/projectspage/weatherapp" component={Weather} />
+        <Route path="/projectspage/moviefinder" component={Moviefinder} />
       </Switch>
     </motion.div>
   );

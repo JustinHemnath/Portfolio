@@ -8,6 +8,12 @@ export const reactprojects = [
     git: "https://github.com/Justinhemnath/Portfolio/tree/master/src/Components/React_Projects/Food-Menu"
   },
 
+  {
+    name: "IMDB APP USING IMDB API",
+    location: "/projectspage/moviefinder",
+    git: "https://github.com/Justinhemnath/Portfolio/tree/master/src/Components/React_Projects/Movie-Finder"
+  },
+
   
   {
     name: "SHOPPING LIST USING REDUX",
