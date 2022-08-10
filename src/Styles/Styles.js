@@ -19,6 +19,10 @@ export const Button = styled.button`
     border: 1px solid ${props => props.color || 'red'};
     color: ${props => props.color || 'red'};
   }
+
+  @media only screen and (max-width: 450px) {
+    margin-left: 3em;
+  }
 `
 
 export const InputField = styled.input`
@@ -30,7 +34,6 @@ export const InputField = styled.input`
     border-radius: 5px;
     font-size: 1.2rem;
     padding-left: 1rem;
-    margin-left: 5em;
     transition: width 0.3s;
 }
 
@@ -40,6 +43,21 @@ export const InputField = styled.input`
 
   &::placeholder {
     color: grey;
+  }
+
+  @media only screen and (max-width: 450px) {
+    width: 15em;
+    padding-left: 0.5rem;
+    margin-bottom: 1em;
+    font-size: 1rem;
+
+    &:focus {
+    width: 15em;
+  }
+
+  &::placeholder {
+    color: transparent;
+  }
 }`
 
 
@@ -53,4 +71,9 @@ export const Alertbox = styled.div`
         color: black;
         border-radius: 10px;
         text-align: center;
+
+        @media only screen and (max-width: 450px) {
+          padding: 1em;
+          font-size: 0.8rem;
+        }
     `

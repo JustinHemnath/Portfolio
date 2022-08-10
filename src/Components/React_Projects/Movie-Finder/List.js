@@ -25,10 +25,10 @@ function List({ data }) {
                 </div>
 
                 <div>
-                  <h1 style={{ fontFamily: "Segoe UI, sans serif" }}>
+                  <p>
                     {item.title}
-                  </h1>
-                  <h2>{item.description}</h2>
+                  </p>
+                  <p>{item.description}</p>
                 </div>
               </motion.div>
             );

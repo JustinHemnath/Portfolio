@@ -32,10 +32,29 @@
 .movieCard > div {
     flex: 20%;
     text-align: center;
+    font-family: InterReg, sans serif;
+}
+
+.movieCard > div p:first-child {
+    font-size: 2rem;   
+    font-weight: bold; 
+    letter-spacing: 1px;
+}
+
+.movieCard > div p:nth-child(2) {
+    font-size: 2rem;   
 }
 
 @media screen and (max-width: 450px) {
     .movieCard {
-        margin-bottom: 10em;
+        margin-bottom: 5em;
+    }
+
+    .movieCard > div p:first-child {
+        font-size: 1rem;  
+    }
+    
+    .movieCard > div p:nth-child(2) {
+        font-size: 0.8rem;   
     }
 }

@@ -27,7 +27,7 @@
 }
 
 .moviefinder .searcher {
-    width: 45em;
+    width: 40em;
     margin: auto;
     margin-top: 2em;
 }
@@ -37,12 +37,11 @@
 }
 
 
-/* @media screen and (max-width: 450px) {
-    .moviefinder .searcher {
-        width: 1em;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-
+@media only screen and (max-width: 450px) {
+    .moviefinder .searcher  {
+        width: 15em;
+        margin-bottom: 1em;
+        
     }
-} */
+    
+}
