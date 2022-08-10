@@ -1,5 +1,6 @@
 import React from "react";
 import "./List.css";
+import { motion } from "framer-motion";
 
 function List({ data }) {
   return (
@@ -7,7 +8,13 @@ function List({ data }) {
       {data
         ? data.map((item) => {
             return (
-              <div className="movieCard" key={item.id}>
+              <motion.div
+                className="movieCard"
+                key={item.id}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
                 <div className="movieImg">
                   <img
                     src={item.image}
@@ -18,12 +25,14 @@ function List({ data }) {
                 </div>
 
                 <div>
-                  <h2>{item.title}</h2>
-                  <h4>{item.description}</h4>
+                  <h1 style={{ fontFamily: "Segoe UI, sans serif" }}>
+                    {item.title}
+                  </h1>
+                  <h2>{item.description}</h2>
                 </div>
-              </div>
-            )}
-        )
+              </motion.div>
+            );
+          })
         : null}
     </div>
   );
