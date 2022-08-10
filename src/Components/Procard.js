@@ -7,15 +7,7 @@ const Projectcard = (props) => {
   const theme = useSelector(themeState);
   return (
     <div className="pro-card">
-      <div
-        className="card-name"
-        style={{
-          backgroundColor: theme.sectionColor,
-          color: theme.fontColor,
-        }}
-      >
         {props.children}
-      </div>
       <a href={props.gitlink} target="_blank" className="code-btn">
         SOURCE CODE
         <span>

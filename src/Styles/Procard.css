@@ -1,3 +1,7 @@
+.pro-card * {
+  box-sizing: border-box;
+}
+
 .pro-card {
   background-color: #FFFEFE;
   min-width: 300px;
@@ -17,17 +21,13 @@
   text-align: center;
   grid-area: 1 / 1 / 4 / 4;
   text-decoration: none;
+  color: #32373C;
   font-size: 2rem;
   font-family: 'Open sans', sans-serif;
   font-weight: 800;
   padding: 50px;
   cursor: pointer;
-  background-color: #333436;
-}
-
-.text-deco {
-  text-decoration: none;
-  color: inherit;
+  background-color: #FFFEFE;
 }
 
 .pro-card .code-btn {
