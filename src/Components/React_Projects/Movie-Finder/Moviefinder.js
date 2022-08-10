@@ -24,7 +24,7 @@ function Moviefinder() {
     else {
       const url = `https://imdb-api.com/en/API/SearchMovie/${process.env.REACT_APP_MOVIE_KEY}/${name}`;
       
-      alerter(true, 'LOADING', '#95CD41')
+      alerter(true, 'LOADING', '#ccff99')
 
       axios.get(url)
         .then(resp => {
