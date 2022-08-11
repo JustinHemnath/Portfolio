@@ -4,15 +4,18 @@ import "./Moviefinder.css";
 import List from "./List";
 import Alert from "./Alert";
 import axios from "axios";
+import { useSelector } from 'react-redux';
+import { themeState } from '../../../Features/themeSlice'
 
 function Moviefinder() {
   const [name, setName] = useState('');
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   const [alert, setAlert] = useState({
     show: false,
     message: '',
     color: '',
   });
+  const theme = useSelector(themeState)
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -47,15 +50,13 @@ function Moviefinder() {
   };
 
   return (
-    <div className="moviefinder">
+    <div className="moviefinder" style={{ backgroundColor: theme.backgroundColor }}>
       <div className="header">
         <h1>IMDB APP</h1>
       </div>
       <div className="searcher">
         <form onSubmit={handleSubmit}>
           <InputField
-            color="#DA0037"
-            width="20em"
             placeholder="Enter a keyword or name of the movie"
             onChange={(e) => setName(e.target.value)}
             value={name}

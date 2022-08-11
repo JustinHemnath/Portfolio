@@ -1,12 +1,15 @@
 import React from "react";
 import "./List.css";
 import { motion } from "framer-motion";
+import { useSelector } from 'react-redux';
+import { themeState } from '../../../Features/themeSlice'
 
 function List({ data }) {
+  const theme = useSelector(themeState)
+
   return (
     <div className="movieList">
-      {data
-        ? data.map((item) => {
+      {data.map((item) => {
             return (
               <motion.div
                 className="movieCard"
@@ -24,7 +27,7 @@ function List({ data }) {
                   />
                 </div>
 
-                <div>
+                <div className="movieDesc" style={{ color: theme.fontColor, }}>
                   <p>
                     {item.title}
                   </p>
@@ -32,8 +35,7 @@ function List({ data }) {
                 </div>
               </motion.div>
             );
-          })
-        : null}
+          })}
     </div>
   );
 }

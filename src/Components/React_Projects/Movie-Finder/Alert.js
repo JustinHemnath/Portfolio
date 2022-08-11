@@ -11,7 +11,7 @@ function Alert({ message, color, removeAlert }) {
             removeAlert()
     
             return () => clearTimeout(alertTimeout)
-        }, 3000)
+        }, 3500)
     }, [])
     
   return (

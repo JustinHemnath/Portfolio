@@ -15,46 +15,55 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 20em;
+    height: 25em;
     max-width: 15em;
-    margin-bottom: 20em;
+    margin-bottom: 10em;
     flex-basis: auto;
 }
 
 .movieCard .movieImg {
-    flex: 80%;
+    height: 20em;
 }
 
 .movieCard .movieImg > img {
     object-fit: contain;
 }
 
-.movieCard > div {
-    flex: 20%;
+.movieCard .movieDesc {
+    height: 5em;
     text-align: center;
     font-family: InterReg, sans serif;
 }
 
-.movieCard > div p:first-child {
-    font-size: 2rem;   
+.movieCard .movieDesc p:first-child {
+    font-size: 1rem;   
     font-weight: bold; 
     letter-spacing: 1px;
 }
 
-.movieCard > div p:nth-child(2) {
-    font-size: 2rem;   
+.movieCard .movieDesc p:nth-child(2) {
+    font-size: 0.8rem;   
 }
 
 @media screen and (max-width: 450px) {
     .movieCard {
+        height: 15em;
         margin-bottom: 5em;
     }
 
-    .movieCard > div p:first-child {
+    .movieCard .movieImg {
+        height: 10em;
+    }
+
+    .movieCard .movieDesc {
+        height: 5em;
+    }
+
+    .movieCard .movieDesc p:first-child {
         font-size: 1rem;  
     }
     
-    .movieCard > div p:nth-child(2) {
+    .movieCard .movieDesc p:nth-child(2) {
         font-size: 0.8rem;   
     }
 }

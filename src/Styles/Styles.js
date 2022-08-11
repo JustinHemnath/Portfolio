@@ -30,7 +30,7 @@ export const InputField = styled.input`
     width: 20em;
     height: 2em;
     outline: none !important;
-    border: 1px solid transparent;
+    border: 3px solid #DA0037;
     border-radius: 5px;
     font-size: 1.2rem;
     padding-left: 1rem;
