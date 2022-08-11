@@ -4,7 +4,7 @@ import Skills from "./Skills";
 import { motion } from "framer-motion";
 import { useSelector } from 'react-redux';
 import { themeState } from "../Features/themeSlice";
-
+import { MdDoubleArrow } from "react-icons/md";
 
 const Homepage = () => {
   const theme = useSelector(themeState)
@@ -29,27 +29,18 @@ const Homepage = () => {
 
           <div className="extra" style={{ color: theme.fontColor }}>
             <p>
-              <i
-                className="fa-solid fa-angles-right fa-beat"
-                style={{ marginRight: "20px" }}
-              ></i>
+            <MdDoubleArrow style={{ marginRight: "20px", verticalAlign: 'middle' }} />
               Made using React Js, SASS, and Framer motion.
             </p>
 
             <p>
-              <i
-                className="fa-solid fa-angles-right fa-beat"
-                style={{ marginRight: "20px" }}
-              ></i>
+            <MdDoubleArrow style={{ marginRight: "20px", verticalAlign: 'middle' }} />
               Please have a look at my Javascript and React Js projects under
               the projects tab.
             </p>
 
             <p>
-              <i
-                className="fa-solid fa-angles-right fa-beat"
-                style={{ marginRight: "20px" }}
-              ></i>
+            <MdDoubleArrow style={{ marginRight: "20px", verticalAlign: 'middle' }} />
               This portfolio is also responsive.
             </p>
           </div>
