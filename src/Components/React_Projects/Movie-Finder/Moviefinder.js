@@ -4,40 +4,43 @@ import "./Moviefinder.css";
 import List from "./List";
 import Alert from "./Alert";
 import axios from "axios";
-import { useSelector } from 'react-redux';
-import { themeState } from '../../../Features/themeSlice'
+import { useSelector } from "react-redux";
+import { themeState } from "../../../Features/themeSlice";
 
 function Moviefinder() {
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
   const [data, setData] = useState([]);
   const [alert, setAlert] = useState({
     show: false,
-    message: '',
-    color: '',
+    message: "",
+    color: "",
   });
-  const theme = useSelector(themeState)
+  const theme = useSelector(themeState);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!name) {
-      alerter(true, 'Please enter a movie name', 'red')
-    } 
-    
-    else {
-      const url = `https://imdb-api.com/en/API/SearchMovie/${process.env.REACT_APP_MOVIE_KEY}/${name}`;
-      
-      alerter(true, 'LOADING', '#ccff99')
 
-      axios.get(url)
-        .then(resp => {
-          const results = resp.data.results
-          setData(results)
-          setName('')
-        })
-        .catch(err => {
-          console.log(err)
-        })
+      alerter(true, "Please enter a movie name", "red");
+
+    } else {
+
+      const url = `https://imdb-api.com/en/API/SearchMovie/${process.env.REACT_APP_MOVIE_KEY}/${name}`;
+
+      alerter(true, "LOADING", "#ccff99");
+
+      try {
+        (async () => {
+          const resp = await axios.get(url);
+          setData(resp.data.results);
+          setName('');
+        })();
+      } 
+      catch (err) {
+        console.log(err);
+      }
+
     }
   };
 
@@ -50,7 +53,10 @@ function Moviefinder() {
   };
 
   return (
-    <div className="moviefinder" style={{ backgroundColor: theme.backgroundColor }}>
+    <div
+      className="moviefinder"
+      style={{ backgroundColor: theme.backgroundColor }}
+    >
       <div className="header">
         <h1>IMDB APP</h1>
       </div>
@@ -77,7 +83,6 @@ function Moviefinder() {
       </div>
 
       <List data={data} />
-
     </div>
   );
 }
