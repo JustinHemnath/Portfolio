@@ -53,7 +53,7 @@ const Homepage = () => {
       </div>
 
       <div className="section-two">
-        <div className="aboutme" style={{ backgroundColor: theme.sectionColor, color: theme.fontColor }}>
+        {/* <div className="aboutme" style={{ backgroundColor: theme.sectionColor, color: theme.fontColor }}>
           <h1>
             <i className="fa-solid fa-circle fa-beat"></i>Why front-end web
             development and React Js in specific?
@@ -85,7 +85,7 @@ const Homepage = () => {
             stack developer (<b>M</b>ongoDB, <b>E</b>xpressJs, <b>R</b>eactJs,{" "}
             <b>N</b>odeJs).
           </p>
-        </div>
+        </div> */}
 
         <div className="personal-info">
           <h1 style={{ color: theme.fontColor }}>Resume</h1>

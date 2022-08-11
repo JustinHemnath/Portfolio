@@ -94,7 +94,7 @@ $ashen: rgb(226, 225, 225);
     }
 
     .personal-info {
-      margin-top: 300px;
+      margin-top: 0px;
 
       h1 {
         text-align: center;
@@ -246,7 +246,7 @@ $ashen: rgb(226, 225, 225);
       .section-one-left {
         flex: 100%;
         .about {
-          text-align: center;
+          text-align: justify;
           margin: 20px 5px 0 20px;
 
           .hello {
@@ -308,7 +308,6 @@ $ashen: rgb(226, 225, 225);
       }
 
       .personal-info {
-        margin-top: 150px;
 
         h1 {
           font-size: 3rem;
@@ -318,16 +317,15 @@ $ashen: rgb(226, 225, 225);
           padding: 10px;
           width: 20em;
           margin: auto;
-          letter-spacing: 1px;
+          letter-spacing: 0.8px;
 
           .info-item {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             font-weight: 800;
-            text-align: center;
             padding: 5px 40px;
-            margin: 0.1em 0;
+            margin: 1em 0;
 
             > p:nth-of-type(1) {
               font-size: 1.5rem;
@@ -338,16 +336,16 @@ $ashen: rgb(226, 225, 225);
             p:nth-of-type(2) {
               text-align: center;
               line-height: 2;
-              font-size: 1rem;
+              font-size: 1.2rem;
               margin: 0;
 
               a {
-                font-size: 1rem;
+                font-size: 1.2rem;
               }
             }
 
             ul {
-              font-size: 1rem;
+              font-size: 1.2rem;
               margin: 0;
               line-height: 1.2;
             }

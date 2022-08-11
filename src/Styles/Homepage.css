@@ -79,7 +79,7 @@
   font-size: 1.8rem;
 }
 .homepage .section-two .personal-info {
-  margin-top: 300px;
+  margin-top: 0px;
 }
 .homepage .section-two .personal-info h1 {
   text-align: center;
@@ -204,7 +204,7 @@
     flex: 100%;
   }
   .homepage .section-one .section-one-left .about {
-    text-align: center;
+    text-align: justify;
     margin: 20px 5px 0 20px;
   }
   .homepage .section-one .section-one-left .about .hello {
@@ -251,9 +251,6 @@
     text-indent: 10px;
     font-size: 1.2rem;
   }
-  .homepage .section-two .personal-info {
-    margin-top: 150px;
-  }
   .homepage .section-two .personal-info h1 {
     font-size: 3rem;
   }
@@ -261,16 +258,15 @@
     padding: 10px;
     width: 20em;
     margin: auto;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
   }
   .homepage .section-two .personal-info .personal-info-section .info-item {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     font-weight: 800;
-    text-align: center;
     padding: 5px 40px;
-    margin: 0.1em 0;
+    margin: 1em 0;
   }
   .homepage .section-two .personal-info .personal-info-section .info-item > p:nth-of-type(1) {
     font-size: 1.5rem;
@@ -281,14 +277,14 @@
   .homepage .section-two .personal-info .personal-info-section .info-item p:nth-of-type(2) {
     text-align: center;
     line-height: 2;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
   }
   .homepage .section-two .personal-info .personal-info-section .info-item p:nth-of-type(2) a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .homepage .section-two .personal-info .personal-info-section .info-item ul {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
     line-height: 1.2;
   }
