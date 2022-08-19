@@ -5,9 +5,21 @@ import { BsSun, BsFillMoonFill } from "react-icons/bs";
 import { useDispatch } from 'react-redux';
 import { DARK_MODE, LIGHT_MODE } from "../Features/themeSlice";
 
+const getLocalStorage = () => {
+  const currentTheme = JSON.parse(localStorage.getItem('currentTheme'))
+  
+  if (currentTheme) {
+    if (currentTheme.fontColor === 'black') return true
+    else return false
+  }
+  
+  return true
+}
+
 const Navbar = () => {
-  const [light, setLight] = useState(true);
+  const [light, setLight] = useState(getLocalStorage());
   const dispatch = useDispatch()
+  
 
   const toggleTheme = () => {
     setLight(!light)
