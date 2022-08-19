@@ -17,6 +17,7 @@ $ashen: rgb(226, 225, 225);
       display: flex;
       flex-direction: row;
       flex: 80%;
+      max-width: 1000px;
       justify-content: space-between;
       line-height: 1.6;
       .about {
