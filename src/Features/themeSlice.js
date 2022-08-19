@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 let initialState = {
-  backgroundColor: "#F3F4F6",
-  fontColor: "#32373c",
+  backgroundColor: '#F3F4F6',
+  fontColor: 'black',
   sectionColor: '#FFFEFE',
+  boxShadow: '0px 0px 10px 5px #c7c7c7',
 };
 
 const themeSlice = createSlice({
@@ -12,16 +13,18 @@ const themeSlice = createSlice({
   reducers: {
     DARK_MODE: () => {
       return {
-        backgroundColor: '#232931',
-        fontColor: "#DDDDDD",
-        sectionColor: '#393E46',
+        backgroundColor: 'black',
+        fontColor: 'white',
+        sectionColor: '#151A1E',
+        boxShadow: 'none',
       };
     },
     LIGHT_MODE: () => {
       return {
-        backgroundColor: "#F3F4F6",
-        fontColor: "#32373c",
+        backgroundColor: '#F3F4F6',
+        fontColor: 'black',
         sectionColor: '#FFFEFE',
+        boxShadow: '0px 0px 10px 5px #c7c7c7',
     };
     },
   },

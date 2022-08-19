@@ -1,4 +1,4 @@
-$accent-green: #4ECCA3;
+$accent-purple: #5902EC;
 $card-grey: #2c2d33;
 $background-grey: #1c2027;
 $ashen: rgb(226, 225, 225);
@@ -31,7 +31,7 @@ $ashen: rgb(226, 225, 225);
         }
 
         .sideline {
-          border-left: 10px solid $accent-green;
+          border-left: 10px solid $accent-purple;
           height: 700px;
           margin-right: 40px;
           float: left;
@@ -64,7 +64,7 @@ $ashen: rgb(226, 225, 225);
     margin-top: 150px;
 
     .fa-circle {
-      color: $accent-green;
+      color: $accent-purple;
       margin-right: 30px;
       vertical-align: middle;
     }
@@ -82,7 +82,7 @@ $ashen: rgb(226, 225, 225);
 
       h1 {
         font-family: SlateBold;
-        text-decoration: underline $accent-green;
+        text-decoration: underline $accent-purple;
         letter-spacing: 1.5px;
       }
 
@@ -99,7 +99,7 @@ $ashen: rgb(226, 225, 225);
       h1 {
         text-align: center;
         font-size: 4rem;
-        text-decoration: underline $accent-green;
+        text-decoration: underline $accent-purple;
         font-family: SlateBold;
         letter-spacing: 10px;
       }
@@ -246,17 +246,17 @@ $ashen: rgb(226, 225, 225);
       .section-one-left {
         flex: 100%;
         .about {
-          text-align: justify;
+          text-align: center;
           margin: 20px 5px 0 20px;
 
           .hello {
             font-size: 4rem;
-            text-align: center;
             letter-spacing: 6px;
           }
 
           .intro {
             width: 350px;
+            font-size: 1.5rem;
             letter-spacing: 1px;
           }
 
@@ -330,7 +330,7 @@ $ashen: rgb(226, 225, 225);
             > p:nth-of-type(1) {
               font-size: 1.5rem;
               font-weight: 800;
-              text-decoration: underline $accent-green;
+              text-decoration: underline $accent-purple;
             }
 
             p:nth-of-type(2) {

@@ -4,7 +4,7 @@ import "../Styles/Clonecard.css";
 const Clonecard = (props) => {
 
   return (
-    <div className="clone-card">
+    <div className="clone-card" style={{ boxShadow: props.shadow }}>
       <a
         href={props.clone}
         target="_blank"

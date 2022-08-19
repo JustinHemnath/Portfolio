@@ -14,7 +14,7 @@
     font-family: 'Open sans';
     font-size: 1.8rem;
     letter-spacing: 1px;
-    color: #32373C;
+    color: black;
     margin-bottom: 4em;
     
 }
@@ -27,14 +27,14 @@
 
 .contactdiv a {
 
-    color: #32373C;
+    color: black;
     text-decoration: none;
 
 }
 
 .contactdiv p:hover, .contactdiv a:hover {
 
-    color: #4ECCA3;
+    color: #5902EC;
 
 }
 
@@ -42,7 +42,7 @@
 
     margin-right: 50px;
     font-size: 5rem;
-    color: #4ECCA3;
+    color: #5902EC;
     
 }
 
