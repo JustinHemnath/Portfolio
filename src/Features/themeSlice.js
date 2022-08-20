@@ -1,7 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-let darkTheme, lightTheme;
-
 const getLocalStorage = () => {
   const currentTheme = localStorage.getItem('currentTheme')
   if (currentTheme) {
@@ -20,7 +18,7 @@ const themeSlice = createSlice({
   initialState: getLocalStorage(),
   reducers: {
     DARK_MODE: () => {
-      darkTheme = {
+      let darkTheme = {
         backgroundColor: 'black',
         fontColor: 'white',
         sectionColor: '#151A1E',
@@ -30,7 +28,7 @@ const themeSlice = createSlice({
       return darkTheme;
     },
     LIGHT_MODE: () => {
-      lightTheme = {
+      let lightTheme = {
         backgroundColor: '#F3F4F6',
         fontColor: 'black',
         sectionColor: '#FFFEFE',

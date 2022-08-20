@@ -23,6 +23,7 @@
   font-weight: 800;
   padding: 50px 30px 10px 30px;
   cursor: pointer;
+  user-select: none;
 }
 
 .clone-card .main-site-btn {
@@ -88,6 +89,5 @@
   .clone-card .code-btn, .clone-card .main-site-btn {
     font-size: 0.8rem;
     padding: 15px 5px;
-    grid-area: 4 / 1 / 4 / 3;
   }
 }
