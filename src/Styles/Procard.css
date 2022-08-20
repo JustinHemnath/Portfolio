@@ -6,7 +6,7 @@
   background-color: #FFFEFE;
   min-width: 280px;
   margin: 0 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, 1fr);
@@ -21,6 +21,7 @@
   text-align: center;
   grid-area: 1 / 1 / 4 / 4;
   text-decoration: none;
+  border-radius: 5px 5px 0 0;
   font-size: 2rem;
   font-family: 'Open sans', sans-serif;
   font-weight: 800;
