@@ -1,22 +1,23 @@
 import React from "react";
 import "../Styles/Clonecard.css";
 
-const Clonecard = (props) => {
+const Clonecard = ({ clone, name, main, git, shadow, bgColor, color }) => {
 
   return (
-    <div className="clone-card" style={{ boxShadow: props.shadow }}>
+    <div className="clone-card" style={{ boxShadow: shadow, backgroundColor: bgColor }}>
       <a
-        href={props.clone}
+        href={clone}
         target="_blank"
         className="card-name"
+        style={{  color: color }}
       >
-        {props.name}
+        {name}
       </a>
-      <a href={props.main} target="_blank" className="main-site-btn">
+      <a href={main} target="_blank" className="main-site-btn">
         MAIN SITE
       </a>
 
-      <a href={props.git} target="_blank" className="code-btn">
+      <a href={git} target="_blank" className="code-btn">
         SOURCE CODE
         <span>
           <i className="fa-brands fa-github"></i>

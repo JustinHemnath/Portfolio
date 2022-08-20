@@ -21,7 +21,9 @@ const Projectspage = () => {
 
     <Procard key={obj.name} gitlink={obj.git} shadow={theme.boxShadow}>
     
-      <Link to={obj.location} className="card-name">
+      <Link to={obj.location} 
+            className="card-name" 
+            style={{ backgroundColor: theme.sectionColor, color: theme.fontColor }}>
 
         {obj.name} 
 
@@ -40,7 +42,11 @@ const Projectspage = () => {
     
     <Procard key={obj.name} gitlink={obj.git} shadow={theme.boxShadow}>
     
-      <a href={obj.location} target="_blank" className="card-name">
+      <a href={obj.location} 
+          target="_blank" 
+          className="card-name"
+          style={{ backgroundColor: theme.sectionColor, color: theme.fontColor }}
+          >
 
         {obj.name}
 
@@ -60,8 +66,10 @@ const Projectspage = () => {
               name={obj.name} 
               clone={obj.clonelink} 
               main={obj.mainlink} 
-              git={obj.gitlink}
+              git={obj.gitlink}s
               shadow={theme.boxShadow} 
+              bgColor={theme.sectionColor} 
+              color={theme.fontColor}
             />
 
   );

@@ -12,7 +12,7 @@
   font-size: 1.5rem;
 }
 
-.navbar {
+.Nav .navbar {
   flex: 90%;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@
   user-select: none;
 }
 
-.navbar .nav-link {
+.Nav .navbar .nav-link {
   padding: 4vh 2vw;
   text-decoration: none;
   /* color: #32373c; */
@@ -28,7 +28,7 @@
   letter-spacing: 4px;
 }
 
-.navbar .active-link {
+.Nav .navbar .active-link {
   background-color: white;
   color: #5902EC;
   text-decoration: none;
@@ -46,7 +46,7 @@
   margin-right: 0.5em;
 }
 
-.toggle .togglebtn {
+.Nav .toggle .togglebtn {
   cursor: pointer;
   color: white;
   font-size: 1.3em;
@@ -54,13 +54,13 @@
   padding: 0.2em;
 }
 
-.toggle .togglebtn:active {
+.Nav .toggle .togglebtn:active {
   color: white;
   background-color: #8751e4;
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  .navbar .nav-link {
+  .Nav .navbar .nav-link {
     display: flex;
     align-items: center;
     margin-left: 0;
@@ -73,7 +73,7 @@
     margin: auto;
   }
 
-  .navbar .nav-link {
+  .Nav .navbar .nav-link {
     padding: 2em 2vw;
     font-size: 0.9rem;
     font-weight: bold;
@@ -82,7 +82,7 @@
     flex: 25%;
   }
 
-  .toggle .togglebtn {
+  .Nav .toggle .togglebtn {
     font-size: 1.5em;
     padding: 0 0.3em;
   }
