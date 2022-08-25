@@ -2,12 +2,12 @@ import React from "react";
 import "../Styles/Homepage.css";
 import Skills from "./Skills";
 import { motion } from "framer-motion";
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 import { themeState } from "../Features/themeSlice";
 import { MdDoubleArrow } from "react-icons/md";
 
 const Homepage = () => {
-  const theme = useSelector(themeState)
+  const theme = useSelector(themeState);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,34 +17,40 @@ const Homepage = () => {
     >
       <div className="section-one">
         <div className="section-one-left" style={{ color: theme.fontColor }}>
-        <div className="about">
-          <div className="sideline"></div>
+          <div className="about">
+            <div className="sideline"></div>
 
-          <p className="hello">Hello...</p>
+            <p className="hello">Hello...</p>
 
-          <p className="intro">
-            My name is Hemnath Balasubramanian and I am a fresher React Js
-            developer from Chennai.
-          </p>
-
-          <div className="extra" style={{ color: theme.fontColor }}>
-            <p>
-            <MdDoubleArrow style={{ marginRight: "20px", verticalAlign: 'middle' }} />
-              Made using React Js, SASS, and Framer motion.
+            <p className="intro">
+              My name is Hemnath Balasubramanian and I am a fresher React Js
+              developer from Chennai.
             </p>
 
-            <p>
-            <MdDoubleArrow style={{ marginRight: "20px", verticalAlign: 'middle' }} />
-              Please have a look at my Javascript and React Js projects under
-              the projects tab.
-            </p>
+            <div className="extra" style={{ color: theme.fontColor }}>
+              <p>
+                <MdDoubleArrow
+                  style={{ marginRight: "20px", verticalAlign: "middle" }}
+                />
+                Made using React Js, SASS, and Framer motion.
+              </p>
 
-            <p>
-            <MdDoubleArrow style={{ marginRight: "20px", verticalAlign: 'middle' }} />
-              This portfolio is also responsive.
-            </p>
+              <p>
+                <MdDoubleArrow
+                  style={{ marginRight: "20px", verticalAlign: "middle" }}
+                />
+                Please have a look at my Javascript and React Js projects under
+                the projects tab.
+              </p>
+
+              <p>
+                <MdDoubleArrow
+                  style={{ marginRight: "20px", verticalAlign: "middle" }}
+                />
+                This portfolio is also responsive.
+              </p>
+            </div>
           </div>
-        </div>
         </div>
 
         <div className="section-one-right">
@@ -90,7 +96,13 @@ const Homepage = () => {
         <div className="personal-info">
           <h1 style={{ color: theme.fontColor }}>Resume</h1>
 
-          <div className="personal-info-section" style={{ backgroundColor: theme.sectionColor, color: theme.fontColor }}>
+          <div
+            className="personal-info-section"
+            style={{
+              backgroundColor: theme.sectionColor,
+              color: theme.fontColor,
+            }}
+          >
             <div className="info-item">
               <p>Name</p>
               <p>Hemnath Balasubramanian</p>
@@ -128,7 +140,11 @@ const Homepage = () => {
               <p>Employment history</p>
               <p>
                 1 year(March 2020 - Apr 2021) as a Language Editor at
-                <a href="https://www.tnq.co.in/" target="_blank">
+                <a
+                  href="https://www.tnq.co.in/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   TNQ Technologies
                 </a>
                 for the following clients: Karger and SAGE
