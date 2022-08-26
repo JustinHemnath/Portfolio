@@ -18,7 +18,6 @@
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://hemnath-portfolio.netlify.app/",
   "scripts": {
     "predeploy": "npm run build",
     "start": "react-scripts start",
