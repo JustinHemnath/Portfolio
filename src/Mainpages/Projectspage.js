@@ -53,8 +53,9 @@ const Projectspage = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", delay: 0.1 }}
       exit={{ opacity: 0 }}
       className="projects-page"
     >
