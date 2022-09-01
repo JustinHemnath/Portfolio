@@ -30,7 +30,10 @@ function Menu() {
         <button onClick={() => filterItems("main")}>MAIN</button>
         <button onClick={() => filterItems("desserts")}>DESSERTS</button>
       </div>
-
+      <h1 className="note">
+        This project is not mobile friendly at the moment. <br />
+        Please view on a desktop screen.
+      </h1>
       <Items list={list} />
     </div>
   );

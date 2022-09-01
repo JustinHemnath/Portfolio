@@ -10,6 +10,7 @@ import { themeState } from "../../../Features/themeSlice";
 function Moviefinder() {
   const [name, setName] = useState("");
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [alert, setAlert] = useState({
     show: false,
     message: "",
@@ -21,11 +22,8 @@ function Moviefinder() {
     e.preventDefault();
 
     if (!name) {
-
       alerter(true, "Please enter a movie name", "red");
-
     } else {
-
       const url = `https://imdb-api.com/en/API/SearchMovie/${process.env.REACT_APP_MOVIE_KEY}/${name}`;
 
       alerter(true, "LOADING", "#ccff99");
@@ -34,13 +32,12 @@ function Moviefinder() {
         (async () => {
           const resp = await axios.get(url);
           setData(resp.data.results);
-          setName('');
+          setLoading(false);
+          setName("");
         })();
-      } 
-      catch (err) {
+      } catch (err) {
         console.log(err);
       }
-
     }
   };
 
@@ -71,18 +68,24 @@ function Moviefinder() {
           <Button color="#DA0037">Search</Button>
         </form>
       </div>
-
       <div className="alertbox">
         {alert.show && (
           <Alert
+            data={data}
             message={alert.message}
             color={alert.color}
             removeAlert={removeAlert}
           />
         )}
       </div>
-
-      <List data={data} />
+      {loading ? (
+        <h1 className="loading">
+          Search for a movie. <br />
+          This app is mobile friendly!
+        </h1>
+      ) : (
+        <List data={data} />
+      )}
     </div>
   );
 }

@@ -1,46 +1,52 @@
 .moviefinder * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .moviefinder {
-    font-family: InterRegBold, sans-serif;
-    min-height: 150em;
-    padding-bottom: 5em;
-    color: #DA0037;
+  font-family: InterRegBold, sans-serif;
+  min-height: 150em;
+  padding-bottom: 5em;
+  color: #da0037;
 }
 
 .moviefinder .header {
-    height: 8em;
-    width: 100%;
-    padding: 1em 0;
-    background-color: #DA0037;
+  height: 8em;
+  width: 100%;
+  padding: 1em 0;
+  background-color: #da0037;
 }
 
 .moviefinder .header h1 {
-    margin: 0;
-    color: black;
-    font-size: 4rem;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-align: center;
+  margin: 0;
+  color: black;
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .moviefinder .searcher {
-    width: 40em;
-    margin: auto;
-    margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
 }
 
 .moviefinder .alertbox {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
+.moviefinder .loading {
+  text-align: center;
+}
 
 @media only screen and (max-width: 450px) {
-    .moviefinder .searcher  {
-        width: 15em;
-        margin-bottom: 1em;
-        
-    }
-    
+  .moviefinder .searcher {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+  .moviefinder .loading {
+    text-align: center;
+    font-size: 2rem;
+  }
 }
