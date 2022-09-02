@@ -1,7 +1,7 @@
 .Nav {
   background: #5902ec;
   box-shadow: 0 1px 5px rgb(138, 138, 138);
-  min-height: 2.5em;
+  min-height: 2.6em;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -76,17 +76,16 @@
   }
 
   .Nav .navbar {
-    font-size: 1.2rem;
     flex-direction: column;
     height: 0;
   }
 
   .Nav .responsive {
-    height: 10em;
+    height: 6.8em;
   }
 
   .Nav .navbar .nav-link {
-    padding: 1em;
+    font-size: 1.3rem;
     width: 100%;
     text-align: center;
     border-top: 1px solid white;
