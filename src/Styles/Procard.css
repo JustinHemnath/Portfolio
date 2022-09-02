@@ -3,7 +3,7 @@
 }
 
 .pro-card {
-  background-color: #FFFEFE;
+  background-color: #fffefe;
   min-width: 280px;
   margin: 0 20px;
   border-radius: 5px;
@@ -23,8 +23,7 @@
   text-decoration: none;
   border-radius: 5px 5px 0 0;
   font-size: 2rem;
-  font-family: 'Open sans', sans-serif;
-  font-weight: 800;
+  font-family: InterReg;
   padding: 50px 20px;
   cursor: pointer;
   user-select: none;
@@ -33,12 +32,12 @@
 .pro-card .code-btn {
   border-radius: 0 0 5px 5px;
   grid-area: 4 / 1 / 4 / 3;
-  background-color: #5902EC;
+  background-color: #5902ec;
   color: #fefefe;
   text-align: center;
   padding: 15px 0;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: InterReg;
   font-size: 1.3rem;
   transition: background-color 0.1s linear;
   cursor: pointer;

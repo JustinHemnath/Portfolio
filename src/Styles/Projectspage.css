@@ -14,10 +14,9 @@
   margin-top: 10em;
 }
 .projects-page .heading > p:first-child {
-  font-family: InterExtraBold;
+  font-family: InterReg;
   font-size: 3rem;
   font-weight: 600;
-  letter-spacing: 3px;
   -webkit-text-decoration: underline #5902ec;
           text-decoration: underline #5902ec;
 }
@@ -25,7 +24,7 @@
   background-color: rgb(253, 253, 226);
   border: 1px solid rgb(149, 127, 0);
   font-size: 1rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: InterReg;
   border-radius: 5px;
   color: rgb(149, 127, 0);
   width: 13em;

@@ -31,14 +31,22 @@ const Homepage = () => {
             <div className="extra" style={{ color: theme.fontColor }}>
               <p>
                 <MdDoubleArrow
-                  style={{ marginRight: "20px", verticalAlign: "middle" }}
+                  style={{
+                    marginRight: "50px",
+                    verticalAlign: "middle",
+                    color: "#5902ec",
+                  }}
                 />
                 Made using React Js, SASS, and Framer motion.
               </p>
 
               <p>
                 <MdDoubleArrow
-                  style={{ marginRight: "20px", verticalAlign: "middle" }}
+                  style={{
+                    marginRight: "50px",
+                    verticalAlign: "middle",
+                    color: "#5902ec",
+                  }}
                 />
                 Please have a look at my Javascript and React Js projects under
                 the projects tab.
@@ -46,7 +54,11 @@ const Homepage = () => {
 
               <p>
                 <MdDoubleArrow
-                  style={{ marginRight: "20px", verticalAlign: "middle" }}
+                  style={{
+                    marginRight: "50px",
+                    verticalAlign: "middle",
+                    color: "#5902ec",
+                  }}
                 />
                 This portfolio is also responsive.
               </p>

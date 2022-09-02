@@ -4,6 +4,7 @@
   margin: 0 20px;
   border-radius: 5px;
   display: grid;
+  font-family: InterReg;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, 1fr);
   gap: 1px;
@@ -19,8 +20,6 @@
   grid-area: 1 / 1 / 4 / 4;
   text-decoration: none;
   font-size: 2rem;
-  font-family: 'Open sans', sans-serif;
-  font-weight: 800;
   padding: 50px 30px 10px 30px;
   cursor: pointer;
   user-select: none;
@@ -29,12 +28,11 @@
 .clone-card .main-site-btn {
   border-radius: 0 0 0 5px;
   grid-area: 4 / 1 / 4 / 1;
-  background-color: #5902EC;
+  background-color: #5902ec;
   color: #fefefe;
   text-align: center;
   padding: 20px 0;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem;
   transition: all 0.1s linear;
   cursor: pointer;
@@ -44,12 +42,11 @@
 .clone-card .code-btn {
   border-radius: 0 0 5px 0;
   grid-area: 4 / 2 / 4 / 2;
-  background-color: #5902EC;
+  background-color: #5902ec;
   color: #fefefe;
   text-align: center;
   padding: 20px 0;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem;
   transition: all 0.1s linear;
   cursor: pointer;
@@ -70,7 +67,8 @@
     font-size: 1.5rem;
     grid-area: 1 / 1 / 3 / 3;
   }
-  .clone-card .code-btn, .clone-card .main-site-btn {
+  .clone-card .code-btn,
+  .clone-card .main-site-btn {
     font-size: 1rem;
     padding: 15px 5px;
   }
@@ -86,7 +84,8 @@
     font-size: 1.7rem;
     grid-area: 1 / 1 / 4 / 4;
   }
-  .clone-card .code-btn, .clone-card .main-site-btn {
+  .clone-card .code-btn,
+  .clone-card .main-site-btn {
     font-size: 0.8rem;
     padding: 15px 5px;
   }
