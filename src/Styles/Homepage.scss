@@ -34,7 +34,7 @@ $ashen: rgb(226, 225, 225);
 
         .sideline {
           border-left: 10px solid $accent-purple;
-          height: 700px;
+          height: 650px;
           margin-right: 40px;
           float: left;
         }
@@ -53,6 +53,12 @@ $ashen: rgb(226, 225, 225);
           font-size: 1.8rem;
           font-family: InterReg;
           letter-spacing: 1px;
+        }
+
+        .arrow {
+          vertical-align: middle;
+          color: #5902ec;
+          margin-right: 1em;
         }
       }
     }
@@ -275,8 +281,11 @@ $ashen: rgb(226, 225, 225);
           .extra {
             p {
               max-width: 350px;
-              font-size: 1.1rem;
+              font-size: 1.3rem;
               letter-spacing: 1px;
+            }
+            .arrow {
+              margin-right: 0.5em;
             }
           }
         }

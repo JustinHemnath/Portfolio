@@ -29,7 +29,7 @@
 }
 .homepage .section-one .section-one-left .about .sideline {
   border-left: 10px solid #5902ec;
-  height: 700px;
+  height: 650px;
   margin-right: 40px;
   float: left;
 }
@@ -45,6 +45,11 @@
   font-size: 1.8rem;
   font-family: InterReg;
   letter-spacing: 1px;
+}
+.homepage .section-one .section-one-left .extra .arrow {
+  vertical-align: middle;
+  color: #5902ec;
+  margin-right: 1em;
 }
 .homepage .section-one .section-one-right {
   flex: 20%;
@@ -227,8 +232,11 @@
   }
   .homepage .section-one .section-one-left .about .extra p {
     max-width: 350px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
+  }
+  .homepage .section-one .section-one-left .about .extra .arrow {
+    margin-right: 0.5em;
   }
   .homepage .section-one .section-one-left {
     flex: 100%;

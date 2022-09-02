@@ -11,7 +11,7 @@
 .Nav .navbar {
   display: flex;
   align-items: center;
-  font-family: "InterReg", sans-serif;
+  font-family: InterReg;
   user-select: none;
   font-size: 1.5rem;
   transition: height 0.3s;
@@ -90,7 +90,7 @@
     width: 100%;
     text-align: center;
     border-top: 1px solid white;
-    flex: 25%;
+    letter-spacing: 4px;
   }
 
   .Nav .toggle .togglebtn {
