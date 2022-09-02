@@ -1,100 +1,70 @@
 .contact {
-
-    max-width: 35%;
-    margin: auto;
-    height: 100vh;
-    padding: 5em 0;
-
+  width: 35em;
+  margin: auto;
+  height: 100vh;
+  padding: 5em 0;
 }
 
 .contactdiv {
-
-    display: flex;
-    align-items: center;
-    font-family: 'Open sans';
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    color: black;
-    margin-bottom: 4em;
-    
+  display: flex;
+  align-items: center;
+  font-family: InterReg;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 4em;
 }
 
-.contactdiv p, .contactdiv a {
-
-    transition: all 0.3s linear;
-
+.contactdiv p,
+.contactdiv a {
+  transition: all 0.3s linear;
 }
 
 .contactdiv a {
-
-    color: black;
-    text-decoration: none;
-
+  color: black;
+  text-decoration: none;
 }
 
-.contactdiv p:hover, .contactdiv a:hover {
-
-    color: #5902EC;
-
+.contactdiv p:hover,
+.contactdiv a:hover {
+  color: #5902ec;
 }
 
 .icons {
-
-    margin-right: 50px;
-    font-size: 5rem;
-    color: #5902EC;
-    
+  margin-right: 50px;
+  font-size: 5rem;
+  color: #5902ec;
 }
 
-
 @media all and (min-width: 600px) and (max-width: 768px) {
-    
-    .contact {
+  .contact {
+    max-width: 60%;
+    margin: auto;
+    padding: 5em 2em;
+  }
 
-        max-width: 60%;
-        margin: auto;
-        padding: 5em 2em;
+  .contactdiv {
+    font-size: 1.4rem;
+    margin-bottom: 4em;
+  }
 
-    }
-    
-    .contactdiv {
-
-        font-size: 1.4rem;
-        margin-bottom: 4em;
-
-    }
-
-    .icons {
-
-        font-size: 4rem;
-
-    }
-
-
+  .icons {
+    font-size: 4rem;
+  }
 }
 
 @media all and (max-width: 600px) {
+  .contact {
+    width: 20em;
+    margin: auto;
+  }
 
-    .contact {
+  .contactdiv {
+    font-size: 1.2rem;
+    margin-bottom: 4em;
+  }
 
-        max-width: 90%;
-        margin: auto;
-        padding: 5em 2em;
-
-    }
-    
-    .contactdiv {
-
-        font-size: 1.1rem;
-        margin-bottom: 4em;
-
-    }
-
-    .icons {
-
-        margin-right: 20px;
-        font-size: 2.8rem;
-
-    }
-
+  .icons {
+    margin-right: 20px;
+    font-size: 2.8rem;
+  }
 }

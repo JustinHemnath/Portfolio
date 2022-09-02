@@ -10,9 +10,9 @@ const Contact = () => {
   return (
     <motion.div
       className="contact"
-      initial={{ opacity: 0, y: -50 }}
+      initial={{ opacity: 0, y: -80 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ type: "spring", delay: 0.1 }}
+      transition={{ delay: 0.1 }}
       exit={{ opacity: 0 }}
     >
       <div className="contactdiv">

@@ -1,56 +1,46 @@
 .Nav {
-  /* background: #4ECCA3; */
-  background: #5902EC;
+  background: #5902ec;
   box-shadow: 0 1px 5px rgb(138, 138, 138);
-  display: flex;
-  flex-direction: row;
-  max-height: 2.5em;
+  min-height: 2.5em;
   position: sticky;
   top: 0;
   z-index: 10;
   overflow: hidden;
-  font-size: 1.5rem;
 }
 
 .Nav .navbar {
-  flex: 90%;
   display: flex;
   align-items: center;
-  font-family: 'InterReg', sans-serif;
+  font-family: "InterReg", sans-serif;
   user-select: none;
+  font-size: 1.5rem;
+  transition: height 0.3s;
 }
 
 .Nav .navbar .nav-link {
-  padding: 4vh 2vw;
+  padding: 0.7em;
   text-decoration: none;
-  /* color: #32373c; */
   color: #fefefe;
   letter-spacing: 4px;
 }
 
 .Nav .navbar .active-link {
   background-color: white;
-  color: #5902EC;
+  color: #5902ec;
   text-decoration: none;
-  padding: 4vh 2vw;
+  padding: 0.7em;
   cursor: pointer;
-  transition: background-color 0.3s linear, border 0.3s linear;
-  color: 0.1s ease;
-}
-
-.Nav .toggle {
-  flex: 5%;
-  display: flex;
-  align-items: center;
-  width: 2em;
-  margin-right: 0.5em;
+  transition: background-color 0.3s linear, border 0.3s linear, color 0.1s ease;
 }
 
 .Nav .toggle .togglebtn {
   cursor: pointer;
   color: white;
-  font-size: 1.3em;
+  font-size: 2.2rem;
   border-radius: 30px;
+  position: absolute;
+  top: 0.2em;
+  right: 0.5em;
   padding: 0.2em;
 }
 
@@ -59,7 +49,11 @@
   background-color: #8751e4;
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+.Nav .hamburger {
+  display: none;
+}
+
+.Nav @media screen and (min-width: 600px) and (max-width: 768px) {
   .Nav .navbar .nav-link {
     display: flex;
     align-items: center;
@@ -70,20 +64,38 @@
 
 @media screen and (max-width: 600px) {
   .Nav {
-    margin: auto;
+    margin: 0;
+  }
+
+  .Nav .hamburger {
+    display: block;
+    font-size: 2.2rem;
+    padding: 0.3em;
+    color: white;
+    border-right: 1px solid white;
+  }
+
+  .Nav .navbar {
+    font-size: 1.2rem;
+    flex-direction: column;
+    height: 0;
+  }
+
+  .Nav .responsive {
+    height: 10em;
   }
 
   .Nav .navbar .nav-link {
-    padding: 2em 2vw;
-    font-size: 0.9rem;
-    font-weight: bold;
+    padding: 1em;
+    width: 100%;
     text-align: center;
-    border-right: 1px solid transparent;
+    border-top: 1px solid white;
     flex: 25%;
   }
 
   .Nav .toggle .togglebtn {
-    font-size: 1.5em;
-    padding: 0 0.3em;
+    font-size: 2.2rem;
+    top: 0.1em;
+    right: 0.2em;
   }
 }

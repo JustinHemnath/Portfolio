@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import "../Styles/Navbar.css";
-import { BsSun, BsFillMoonFill } from "react-icons/bs";
+import { BsList, BsSun, BsFillMoonFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { DARK_MODE, LIGHT_MODE } from "../Features/themeSlice";
 
@@ -18,6 +18,7 @@ const getLocalStorage = () => {
 
 const Navbar = () => {
   const [light, setLight] = useState(getLocalStorage());
+  const [responsive, setResponsive] = useState(false);
   const dispatch = useDispatch();
 
   const toggleTheme = () => {
@@ -32,7 +33,15 @@ const Navbar = () => {
 
   return (
     <div className="Nav">
-      <div className="navbar">
+      <BsList
+        className="hamburger"
+        onClick={() => setResponsive(!responsive)}
+      />
+
+      <div
+        className={!responsive ? "navbar" : "navbar responsive"}
+        onClick={() => setResponsive(!responsive)}
+      >
         <NavLink
           to="/"
           className={({ isActive }) =>

@@ -19,15 +19,16 @@
 .homepage .section-one .section-one-left .about {
   font-size: 2.5rem;
   margin: 20px 50px 0 20px;
-  font-family: InterExtraBold;
+  font-family: InterReg;
   text-align: center;
 }
 .homepage .section-one .section-one-left .about .hello {
   font-size: 6rem;
   margin: 0px;
+  font-family: InterExtraBold;
 }
 .homepage .section-one .section-one-left .about .sideline {
-  border-left: 10px solid #5902EC;
+  border-left: 10px solid #5902ec;
   height: 700px;
   margin-right: 40px;
   float: left;
@@ -53,7 +54,7 @@
   margin-top: 150px;
 }
 .homepage .section-two .fa-circle {
-  color: #5902EC;
+  color: #5902ec;
   margin-right: 30px;
   vertical-align: middle;
 }
@@ -70,8 +71,8 @@
 }
 .homepage .section-two .aboutme h1 {
   font-family: SlateBold;
-  -webkit-text-decoration: underline #5902EC;
-          text-decoration: underline #5902EC;
+  -webkit-text-decoration: underline #5902ec;
+          text-decoration: underline #5902ec;
   letter-spacing: 1.5px;
 }
 .homepage .section-two .aboutme p {
@@ -85,8 +86,8 @@
 .homepage .section-two .personal-info h1 {
   text-align: center;
   font-size: 4rem;
-  -webkit-text-decoration: underline #5902EC;
-          text-decoration: underline #5902EC;
+  -webkit-text-decoration: underline #5902ec;
+          text-decoration: underline #5902ec;
   font-family: SlateBold;
   letter-spacing: 10px;
 }
@@ -206,16 +207,14 @@
   }
   .homepage .section-one .section-one-left .about {
     text-align: center;
-    margin: 20px 5px 0 20px;
+    margin: 0.5em;
   }
   .homepage .section-one .section-one-left .about .hello {
     font-size: 4rem;
-    letter-spacing: 6px;
   }
   .homepage .section-one .section-one-left .about .intro {
     width: 350px;
     font-size: 1.5rem;
-    letter-spacing: 1px;
   }
   .homepage .section-one .section-one-left .about .sideline {
     height: 0px;
@@ -272,8 +271,8 @@
   .homepage .section-two .personal-info .personal-info-section .info-item > p:nth-of-type(1) {
     font-size: 1.5rem;
     font-weight: 800;
-    -webkit-text-decoration: underline #5902EC;
-            text-decoration: underline #5902EC;
+    -webkit-text-decoration: underline #5902ec;
+            text-decoration: underline #5902ec;
   }
   .homepage .section-two .personal-info .personal-info-section .info-item p:nth-of-type(2) {
     text-align: center;

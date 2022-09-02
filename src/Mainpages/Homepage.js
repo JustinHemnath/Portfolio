@@ -10,9 +10,9 @@ const Homepage = () => {
   const theme = useSelector(themeState);
   return (
     <motion.div
-      initial={{ opacity: 0, y: -50 }}
+      initial={{ opacity: 0, y: -80 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ type: "spring", delay: 0.1 }}
+      transition={{ delay: 0.1 }}
       exit={{ opacity: 0 }}
       className="homepage"
     >
@@ -21,11 +21,11 @@ const Homepage = () => {
           <div className="about">
             <div className="sideline"></div>
 
-            <p className="hello">Hello...</p>
+            <p className="hello">Hello</p>
 
             <p className="intro">
-              My name is Hemnath Balasubramanian and I am a fresher React Js
-              developer from Chennai.
+              My name is Hemnath Balasubramanian and I am a React Js developer
+              from Chennai.
             </p>
 
             <div className="extra" style={{ color: theme.fontColor }}>
