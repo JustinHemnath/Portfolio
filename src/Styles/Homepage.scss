@@ -21,15 +21,14 @@ $ashen: rgb(226, 225, 225);
       justify-content: space-between;
       line-height: 1.6;
       .about {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         margin: 20px 50px 0 20px;
-        font-family: InterReg;
+        font-family: InterExtraBold;
         text-align: center;
 
         .hello {
           font-size: 6rem;
           margin: 0px;
-          font-family: InterExtraBold;
         }
 
         .sideline {
@@ -37,11 +36,6 @@ $ashen: rgb(226, 225, 225);
           height: 650px;
           margin-right: 40px;
           float: left;
-        }
-
-        .hello,
-        .intro {
-          letter-spacing: 1.2px;
         }
       }
 
@@ -52,7 +46,6 @@ $ashen: rgb(226, 225, 225);
         p {
           font-size: 1.8rem;
           font-family: InterReg;
-          letter-spacing: 1px;
         }
 
         .arrow {
@@ -108,8 +101,7 @@ $ashen: rgb(226, 225, 225);
         text-align: center;
         font-size: 4rem;
         text-decoration: underline $accent-purple;
-        font-family: SlateBold;
-        letter-spacing: 10px;
+        font-family: InterExtraBold;
       }
 
       .personal-info-section {
@@ -263,11 +255,11 @@ $ashen: rgb(226, 225, 225);
 
           .intro {
             width: 350px;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
           }
 
           .sideline {
-            height: 0px;
+            display: none;
           }
 
           p {
@@ -282,7 +274,6 @@ $ashen: rgb(226, 225, 225);
             p {
               max-width: 350px;
               font-size: 1.3rem;
-              letter-spacing: 1px;
             }
             .arrow {
               margin-right: 0.5em;
@@ -322,39 +313,35 @@ $ashen: rgb(226, 225, 225);
         }
 
         .personal-info-section {
-          padding: 10px;
+          padding: 5px;
           width: 20em;
           margin: auto;
-          letter-spacing: 0.8px;
 
           .info-item {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            font-weight: 800;
-            padding: 5px 40px;
+            padding: 5px 20px;
             margin: 1em 0;
 
             > p:nth-of-type(1) {
               font-size: 1.5rem;
-              font-weight: 800;
               text-decoration: underline $accent-purple;
             }
 
             p:nth-of-type(2) {
               text-align: center;
               line-height: 2;
-              font-size: 1.2rem;
+              font-size: 1.3rem;
               margin: 0;
 
               a {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
               }
             }
 
             ul {
-              font-size: 1.2rem;
-              margin: 0;
+              font-size: 1.3rem;
               line-height: 1.2;
             }
           }

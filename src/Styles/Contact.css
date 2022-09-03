@@ -10,23 +10,13 @@
   align-items: center;
   font-family: InterReg;
   font-size: 2rem;
-  color: black;
   margin-bottom: 4em;
 }
 
 .contactdiv p,
 .contactdiv a {
-  transition: all 0.3s linear;
-}
-
-.contactdiv a {
-  color: black;
-  text-decoration: none;
-}
-
-.contactdiv p:hover,
-.contactdiv a:hover {
   color: #5902ec;
+  transition: all 0.3s linear;
 }
 
 .icons {
@@ -56,6 +46,7 @@
   .contact {
     width: 20em;
     margin: auto;
+    padding: 5em 0;
   }
 
   .contactdiv {
@@ -64,7 +55,7 @@
   }
 
   .icons {
-    margin-right: 20px;
-    font-size: 2.8rem;
+    margin-right: 10px;
+    font-size: 2.5rem;
   }
 }
