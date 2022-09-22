@@ -1,15 +1,15 @@
-import React, { useState, useRef } from "react";
-import { NavLink } from "react-router-dom";
-import "../Styles/Navbar.css";
-import { BsList, BsSun, BsFillMoonFill } from "react-icons/bs";
-import { useDispatch } from "react-redux";
-import { DARK_MODE, LIGHT_MODE } from "../Features/themeSlice";
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import '../Styles/Navbar.css';
+import { BsList, BsSun, BsFillMoonFill } from 'react-icons/bs';
+import { useDispatch } from 'react-redux';
+import { DARK_MODE, LIGHT_MODE } from '../Features/themeSlice';
 
 const getLocalStorage = () => {
-  const currentTheme = JSON.parse(localStorage.getItem("currentTheme"));
+  const currentTheme = JSON.parse(localStorage.getItem('currentTheme'));
 
   if (currentTheme) {
-    if (currentTheme.fontColor === "black") return true;
+    if (currentTheme.fontColor === 'black') return true;
     else return false;
   }
 
@@ -32,49 +32,49 @@ const Navbar = () => {
   };
 
   return (
-    <div className="Nav">
+    <div className='Nav'>
       <BsList
-        className="hamburger"
+        className='hamburger'
         onClick={() => setResponsive(!responsive)}
       />
 
       <div
-        className={!responsive ? "navbar" : "navbar responsive"}
+        className={!responsive ? 'navbar' : 'navbar responsive'}
         onClick={() => setResponsive(!responsive)}
       >
         <NavLink
-          to="/"
+          to='/'
           className={({ isActive }) =>
-            isActive ? "nav-link active-link" : "nav-link"
+            isActive ? 'nav-link active-link' : 'nav-link'
           }
         >
           HOME
         </NavLink>
 
         <NavLink
-          to="/projectspage"
+          to='/projectspage'
           className={({ isActive }) =>
-            isActive ? "nav-link active-link" : "nav-link"
+            isActive ? 'nav-link active-link' : 'nav-link'
           }
         >
           PROJECTS
         </NavLink>
 
         <NavLink
-          to="/contact"
+          to='/contact'
           className={({ isActive }) =>
-            isActive ? "nav-link active-link" : "nav-link"
+            isActive ? 'nav-link active-link' : 'nav-link'
           }
         >
           CONTACT ME
         </NavLink>
       </div>
 
-      <div className="toggle" onClick={toggleTheme}>
+      <div className='toggle' onClick={toggleTheme}>
         {light ? (
-          <BsSun className="togglebtn" />
+          <BsSun className='togglebtn' />
         ) : (
-          <BsFillMoonFill className="togglebtn" />
+          <BsFillMoonFill className='togglebtn' />
         )}
       </div>
     </div>

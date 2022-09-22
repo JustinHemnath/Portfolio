@@ -1,40 +1,40 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const getLocalStorage = () => {
-  const currentTheme = localStorage.getItem("currentTheme");
+  const currentTheme = localStorage.getItem('currentTheme');
   if (currentTheme) {
     return JSON.parse(currentTheme);
   }
   return {
-    backgroundColor: "#F3F4F6",
-    fontColor: "black",
-    sectionColor: "#FFFEFE",
-    boxShadow: "0px 0px 10px 5px #c7c7c7",
+    backgroundColor: '#F3F4F6',
+    fontColor: 'black',
+    sectionColor: '#FFFEFE',
+    boxShadow: '0px 0px 10px 5px #c7c7c7',
   };
 };
 
 const themeSlice = createSlice({
-  name: "theme",
+  name: 'theme',
   initialState: getLocalStorage(),
   reducers: {
     DARK_MODE: () => {
       let darkTheme = {
-        backgroundColor: "black",
-        fontColor: "white",
-        sectionColor: "#151A1E",
-        boxShadow: "none",
+        backgroundColor: 'black',
+        fontColor: 'white',
+        sectionColor: '#151A1E',
+        boxShadow: 'none',
       };
-      localStorage.setItem("currentTheme", JSON.stringify(darkTheme));
+      localStorage.setItem('currentTheme', JSON.stringify(darkTheme));
       return darkTheme;
     },
     LIGHT_MODE: () => {
       let lightTheme = {
-        backgroundColor: "#F3F4F6",
-        fontColor: "black",
-        sectionColor: "#FFFEFE",
-        boxShadow: "0px 0px 10px 5px #c7c7c7",
+        backgroundColor: '#F3F4F6',
+        fontColor: 'black',
+        sectionColor: '#FFFEFE',
+        boxShadow: '0px 0px 10px 5px #c7c7c7',
       };
-      localStorage.setItem("currentTheme", JSON.stringify(lightTheme));
+      localStorage.setItem('currentTheme', JSON.stringify(lightTheme));
       return lightTheme;
     },
   },
