@@ -16,13 +16,13 @@ $ashen: rgb(226, 225, 225);
     .section-one-left {
       display: flex;
       flex-direction: row;
-      flex: 80%;
-      max-width: 1000px;
+      flex-wrap: wrap;
       justify-content: space-between;
       line-height: 1.6;
+      margin-left: 1em;
+
       .about {
         font-size: 2.8rem;
-        margin: 20px 50px 0 20px;
         font-family: InterExtraBold;
         text-align: center;
 
@@ -56,7 +56,7 @@ $ashen: rgb(226, 225, 225);
       }
     }
     .section-one-right {
-      flex: 20%;
+      // flex: 20%;
     }
   }
 
@@ -239,31 +239,26 @@ $ashen: rgb(226, 225, 225);
 @media screen and (max-width: 600px) {
   .homepage {
     .section-one {
+      width: 100%;
       display: flex;
       flex-direction: column;
       line-height: 1.6;
 
       .section-one-left {
-        flex: 100%;
         .about {
           text-align: center;
-          margin: 0.5em;
+          margin: 0 0.2em;
 
           .hello {
             font-size: 4rem;
           }
 
           .intro {
-            width: 350px;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
           }
 
           .sideline {
             display: none;
-          }
-
-          p {
-            font-size: 1.5rem;
           }
 
           .intro {
@@ -273,16 +268,13 @@ $ashen: rgb(226, 225, 225);
           .extra {
             p {
               max-width: 350px;
-              font-size: 1.3rem;
+              font-size: 1.2rem;
             }
             .arrow {
               margin-right: 0.5em;
             }
           }
         }
-      }
-      .section-one-left {
-        flex: 100%;
       }
     }
 

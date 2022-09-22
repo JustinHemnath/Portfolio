@@ -1,10 +1,10 @@
-import React from "react";
-import "../Styles/Homepage.css";
-import Skills from "./Skills";
-import { motion } from "framer-motion";
-import { useSelector } from "react-redux";
-import { themeState } from "../Features/themeSlice";
-import { MdDoubleArrow } from "react-icons/md";
+import React from 'react';
+import '../Styles/Homepage.scss';
+import Skills from './Skills';
+import { motion } from 'framer-motion';
+import { useSelector } from 'react-redux';
+import { themeState } from '../Features/themeSlice';
+import { MdDoubleArrow } from 'react-icons/md';
 
 const Homepage = () => {
   const theme = useSelector(themeState);
@@ -14,28 +14,28 @@ const Homepage = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1 }}
       exit={{ opacity: 0 }}
-      className="homepage"
+      className='homepage'
     >
-      <div className="section-one">
-        <div className="section-one-left" style={{ color: theme.fontColor }}>
-          <div className="about">
-            <div className="sideline"></div>
+      <div className='section-one'>
+        <div className='section-one-left' style={{ color: theme.fontColor }}>
+          <div className='about'>
+            {/* <div className="sideline"></div> */}
 
-            <p className="hello">Hello</p>
+            <p className='hello'>Hello</p>
 
-            <p className="intro">
+            <p className='intro'>
               My name is Hemnath Balasubramanian and I am a React Js developer
               from Chennai.
             </p>
 
-            <div className="extra" style={{ color: theme.fontColor }}>
+            <div className='extra' style={{ color: theme.fontColor }}>
               <p>
-                <MdDoubleArrow className="arrow" />
+                <MdDoubleArrow className='arrow' />
                 Made using React Js, SASS, and Framer motion.
               </p>
 
               <p>
-                <MdDoubleArrow className="arrow" />
+                <MdDoubleArrow className='arrow' />
                 Please have a look at my Javascript and React Js projects under
                 the projects tab.
               </p>
@@ -43,12 +43,12 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="section-one-right">
+        <div className='section-one-right'>
           <Skills />
         </div>
       </div>
 
-      <div className="section-two">
+      <div className='section-two'>
         {/* <div className="aboutme" style={{ backgroundColor: theme.sectionColor, color: theme.fontColor }}>
           <h1>
             <i className="fa-solid fa-circle fa-beat"></i>Why front-end web
@@ -83,37 +83,37 @@ const Homepage = () => {
           </p>
         </div> */}
 
-        <div className="personal-info">
+        <div className='personal-info'>
           <h1 style={{ color: theme.fontColor }}>Resume</h1>
 
           <div
-            className="personal-info-section"
+            className='personal-info-section'
             style={{
               backgroundColor: theme.sectionColor,
               color: theme.fontColor,
             }}
           >
-            <div className="info-item">
+            <div className='info-item'>
               <p>Name</p>
               <p>Hemnath Balasubramanian</p>
             </div>
 
-            <div className="info-item">
+            <div className='info-item'>
               <p>DOB</p>
               <p>30 Nov 1996</p>
             </div>
 
-            <div className="info-item">
+            <div className='info-item'>
               <p>Place</p>
               <p>Chennai, India</p>
             </div>
 
-            <div className="info-item">
+            <div className='info-item'>
               <p>Languages</p>
               <p>English, Tamil</p>
             </div>
 
-            <div className="info-item">
+            <div className='info-item'>
               <p>Education</p>
               <p>
                 B.E Electrical and Electronics <br />
@@ -121,19 +121,19 @@ const Homepage = () => {
               </p>
             </div>
 
-            <div className="info-item">
+            <div className='info-item'>
               <p>Alma mater</p>
               <p>MNM Jain Engg. College</p>
             </div>
 
-            <div className="info-item">
+            <div className='info-item'>
               <p>Employment history</p>
               <p>
                 1 year(March 2020 - Apr 2021) as a Language Editor at
                 <a
-                  href="https://www.tnq.co.in/"
-                  target="_blank"
-                  rel="noreferrer"
+                  href='https://www.tnq.co.in/'
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   TNQ Technologies
                 </a>
@@ -141,7 +141,7 @@ const Homepage = () => {
               </p>
             </div>
 
-            <div className="info-item">
+            <div className='info-item'>
               <p>Technical skills</p>
               <ul>
                 <li>
@@ -171,7 +171,7 @@ const Homepage = () => {
               </ul>
             </div>
 
-            <div className="info-item">
+            <div className='info-item'>
               <p>Non-technical skills</p>
               <ul>
                 <li>
@@ -193,7 +193,7 @@ const Homepage = () => {
               </ul>
             </div>
 
-            <div className="info-item">
+            <div className='info-item'>
               <p>Currently learning</p>
               <ul>
                 <li>

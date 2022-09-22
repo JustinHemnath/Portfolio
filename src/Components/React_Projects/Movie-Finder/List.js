@@ -1,8 +1,8 @@
-import React from "react";
-import "./List.css";
-import { motion } from "framer-motion";
-import { useSelector } from "react-redux";
-import { themeState } from "../../../Features/themeSlice";
+import React from 'react';
+import './List.scss';
+import { motion } from 'framer-motion';
+import { useSelector } from 'react-redux';
+import { themeState } from '../../../Features/themeSlice';
 
 function List({ data }) {
   const theme = useSelector(themeState);
@@ -16,15 +16,9 @@ function List({ data }) {
             key={item.id}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
+            exit={{ opacity: 0 }}>
             <div className="movieImg">
-              <img
-                src={item.image}
-                alt={item.title}
-                width="100%"
-                height="100%"
-              />
+              <img src={item.image} alt={item.title} />
             </div>
 
             <div className="movieDesc" style={{ color: theme.fontColor }}>

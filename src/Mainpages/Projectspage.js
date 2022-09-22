@@ -1,12 +1,12 @@
-import React from "react";
-import "../Styles/Projectspage.css";
-import { jsprojects, reactprojects, cloneprojects } from "./ProjectsArray";
-import Procard from "../Components/Procard";
-import Clonecard from "../Components/Clonecard";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useSelector } from "react-redux";
-import { themeState } from "../Features/themeSlice";
+import React from 'react';
+import '../Styles/Projectspage.scss';
+import { jsprojects, reactprojects, cloneprojects } from './ProjectsArray';
+import Procard from '../Components/Procard';
+import Clonecard from '../Components/Clonecard';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { useSelector } from 'react-redux';
+import { themeState } from '../Features/themeSlice';
 
 const Projectspage = () => {
   const theme = useSelector(themeState);
@@ -17,8 +17,7 @@ const Projectspage = () => {
       <Link
         to={obj.location}
         className="card-name"
-        style={{ backgroundColor: theme.sectionColor, color: theme.fontColor }}
-      >
+        style={{ backgroundColor: theme.sectionColor, color: theme.fontColor }}>
         {obj.name}
       </Link>
     </Procard>
@@ -31,8 +30,7 @@ const Projectspage = () => {
         target="_blank"
         rel="noreferrer"
         className="card-name"
-        style={{ backgroundColor: theme.sectionColor, color: theme.fontColor }}
-      >
+        style={{ backgroundColor: theme.sectionColor, color: theme.fontColor }}>
         {obj.name}
       </a>
     </Procard>
@@ -57,8 +55,7 @@ const Projectspage = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1 }}
       exit={{ opacity: 0 }}
-      className="projects-page"
-    >
+      className="projects-page">
       {/* REACT PROJECTS */}
 
       <div className="heading" style={{ color: theme.fontColor }}>

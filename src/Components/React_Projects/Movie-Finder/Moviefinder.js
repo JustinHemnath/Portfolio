@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import { Button, InputField } from "../../../Styles/Styles";
-import "./Moviefinder.css";
-import List from "./List";
-import Alert from "./Alert";
-import axios from "axios";
-import { useSelector } from "react-redux";
-import { themeState } from "../../../Features/themeSlice";
+import React, { useState } from 'react';
+import { Button, InputField } from '../../../Styles/Styles';
+import './Moviefinder.css';
+import List from './List';
+import Alert from './Alert';
+import axios from 'axios';
+import { useSelector } from 'react-redux';
+import { themeState } from '../../../Features/themeSlice';
 
 function Moviefinder() {
-  const [name, setName] = useState("");
+  const [name, setName] = useState('');
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [alert, setAlert] = useState({
     show: false,
-    message: "",
-    color: "",
+    message: '',
+    color: '',
   });
   const theme = useSelector(themeState);
 
@@ -22,18 +22,18 @@ function Moviefinder() {
     e.preventDefault();
 
     if (!name) {
-      alerter(true, "Please enter a movie name", "red");
+      alerter(true, 'Please enter a movie name', 'red');
     } else {
       const url = `https://imdb-api.com/en/API/SearchMovie/${process.env.REACT_APP_MOVIE_KEY}/${name}`;
 
-      alerter(true, "LOADING", "#ccff99");
+      alerter(true, 'LOADING', '#ccff99');
 
       try {
         (async () => {
           const resp = await axios.get(url);
           setData(resp.data.results);
           setLoading(false);
-          setName("");
+          setName('');
         })();
       } catch (err) {
         console.log(err);
@@ -41,19 +41,18 @@ function Moviefinder() {
     }
   };
 
-  const alerter = (show = false, message = "", color = "") => {
+  const alerter = (show = false, message = '', color = '') => {
     setAlert({ show, message, color });
   };
 
   const removeAlert = () => {
-    alerter(false, "", "");
+    alerter(false, '', '');
   };
 
   return (
     <div
       className="moviefinder"
-      style={{ backgroundColor: theme.backgroundColor }}
-    >
+      style={{ backgroundColor: theme.backgroundColor }}>
       <div className="header">
         <h1>IMDB APP</h1>
       </div>

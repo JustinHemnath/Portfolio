@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import { Alertbox } from "../../../Styles/Styles";
+import React, { useEffect } from 'react';
+import { Alertbox } from '../../../Styles/Styles';
 
-function Alert({ data, message, color, removeAlert }) {
+function Alert({ message, color, removeAlert }) {
   useEffect(() => {
     const alertTimeout = setTimeout(() => {
       removeAlert();
